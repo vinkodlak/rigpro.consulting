@@ -35,14 +35,9 @@ const IndexPage = ({ data }) => {
   const { markdownRemark: post } = data
 
   return (
-    <Layout>
-      <IndexPageTemplate
-        contentComponent={HTMLContent}
-        title={post.frontmatter.title}
-        content={post.html}
-      />
-    </Layout>
+    <div></div>
   )
+
 }
 
 IndexPage.propTypes = {
