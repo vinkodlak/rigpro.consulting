@@ -1,3 +1,3 @@
 ---
-templateKey: home-page
+templateKey: index-page
 ---
