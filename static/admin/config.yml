@@ -133,7 +133,51 @@ collections:
                 },
               ]
             }
-          
+      - file: "src/pages/courses/index.md"
+        label: "Courses"
+        name: courses
+        fields:
+          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "courses-page"}
+          - { label: Title, name: title, widget: string }
+          - { label: "Drilling personnel", name: drillingPersonnel, widget: object,
+              fields: [
+                { label: Title, name: title, widget: string },
+                { label: Subtitle, name: subtitle, widget: string },
+                { label: Body, name: body, widget: markdown },
+                { label: "Action", name: action, widget: object,
+                  fields: [
+                    { label: "Action Text", name: text, widget: string },
+                    { label: "Action URL", name: url, widget: string },
+                  ]
+                }
+              ]
+            }
+          - { label: "Drilling personnel", name: drillingPersonnel, widget: object,
+              fields: [
+                { label: Title, name: title, widget: string },
+                { label: Subtitle, name: subtitle, widget: string },
+                { label: Body, name: body, widget: markdown },
+                { label: "Action", name: action, widget: object,
+                  fields: [
+                    { label: "Action Text", name: text, widget: string },
+                    { label: "Action URL", name: url, widget: string },
+                  ]
+                }
+              ]
+            }
+          - { label: "Drilling personnel", name: drillingPersonnel, widget: object,
+              fields: [
+                { label: Title, name: title, widget: string },
+                { label: Subtitle, name: subtitle, widget: string },
+                { label: Body, name: body, widget: markdown },
+                { label: "Action", name: action, widget: object,
+                  fields: [
+                    { label: "Action Text", name: text, widget: string },
+                    { label: "Action URL", name: url, widget: string },
+                  ]
+                }
+              ]
+            }
       - file: "src/pages/about/index.md"
         label: "About"
         name: "about"
