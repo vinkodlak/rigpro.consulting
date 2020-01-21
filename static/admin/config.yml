@@ -63,6 +63,12 @@ collections:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
           - {label: "test", name: "test", widget: "string"}
+          - {label: "test2", name: "test2", widget: "string"}
+          - { 
+              label: "test3", 
+              name: "test3", 
+              widget: "string"
+            }
       - file: "src/pages/products/index.md"
         label: "Products Page"
         name: "products"
