@@ -1,29 +1,7 @@
 ---
 templateKey: workflow-group
-title: Test Workflow group by ivor
-description: This is a test description of the workflow group.
-image: /img/blog-index.jpg
+title: Initial contact
+description: Initial date - getting to know each other.
+image: /img/2020-02-01 23_45_47-Photos.png
 ---
-This is an example test for the workflow. 
-
-Adding a heading here below:
-
-## Heading 2 - hello world
-
-
-
-
-
-Continue with plain thext
-
-### And a little of heading 3.
-
-
-
-
-
-
-
-
-
-Bye.
+At the beginning of the project we get to know each other. Contact details are shared and we get a better idea of your expectations.
