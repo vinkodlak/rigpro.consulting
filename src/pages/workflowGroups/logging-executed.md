@@ -1,7 +1,7 @@
 ---
 templateKey: workflow-group
 title: Logging executed
-description: Show time.
+description: Show time!
 image: /img/2020-02-01 23_45_47-Photos.png
 ---
 Culmination of all the hard work invested over the last several months.
