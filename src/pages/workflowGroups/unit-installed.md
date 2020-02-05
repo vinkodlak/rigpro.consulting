@@ -6,4 +6,4 @@ description: >-
   to unpack and meet the neighbors. 
 image: /img/2020-02-01 23_45_47-Photos.png
 ---
-This is a routine operation, providing all the planning was done thoroughly and ahead of the time. At this stage, it is too late to think about the Unit zonation, or devise a plan to change out the logging cable!
+This is a routine operation, providing all the planning was thoroughly laid out ahead of the time. At this stage, it is too late to think about the unit zonation, or devise a plan to change out the logging cable!
