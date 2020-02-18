@@ -1,4 +1,5 @@
 ---
-templateKey: 'our-workflow-page'
-path: /our-workflow
+templateKey: our-workflow-page
+title: title here
 ---
+
