@@ -41,19 +41,6 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
 
-  - name: workflowGroups
-    label: "Workflow Group"
-    editor:
-      preview: false
-    folder: src/pages/workflowGroups
-    create: true
-    fields:
-      - { label: "Template Key", name: templateKey, widget: hidden, default: "workflow-group" }
-      - { label: Title, name: title, widget: string }
-      - { label: Description, name: description, widget: text }
-      - { label: Body, name: body, widget: markdown }
-      - { label: Image, name: image, widget: image }
-
   - name: "pages"
     label: "Pages"
     editor:
