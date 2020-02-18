@@ -110,12 +110,12 @@ collections:
         fields:
           - { label: "Template Key", name: templateKey, widget: hidden, default: our-workflow-page }
           - { label: Title, name: title, widget: string }
-          - { label: Sections, name: sections, widget: list,
+          - { label: Workflow Items, name: workflows, widget: list,
               fields: [
                 { label: Title, name: title, widget: string },
                 { label: Description, name: description, widget: text },
-                { label: Body, name: body, widget: markdown },
                 { label: Image, name: image, widget: image }
+                { label: Body, name: body, widget: markdown },
               ]
             }
       - file: "src/pages/software/index.md"
