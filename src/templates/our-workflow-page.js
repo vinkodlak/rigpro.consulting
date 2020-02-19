@@ -16,7 +16,7 @@ export const OurWorkflowPageTemplate = ({ title, workflows, contentComponent }) 
           <div className="column is-10 is-offset-1">
             <div className="section">
               <h1 className="title is-size-3 has-text-weight-bold is-bold-light">
-                {title}
+                {title} workflow page
               </h1>
 
               <Workflow workflows={workflows} />              

@@ -2,10 +2,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { OurWorkflowPageTemplate } from '../../templates/our-workflow-page'
 
-const OurWorkflowPagePreview = ({ entry, widgetFor }) => (
+const OurWorkflowPagePreview = ({ entry, widgetsFor }) => (
   <OurWorkflowPageTemplate
     title={entry.getIn(['data', 'title'])}
-    workflows={widgetFor('workflows')}
+    // workflows={widgetsFor('workflows')}
   />
 )
 
