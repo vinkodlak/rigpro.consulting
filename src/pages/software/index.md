@@ -46,6 +46,29 @@ sections:
         and you need to react fast. You can visualize the logging string in a
         realistic borehole model within seconds, determine the probable sticking
         mechanism and quickly decide on a course of action.
+  - image:
+      altText: Innovative Statistics
+      image: /img/platform.png
+    part1:
+      title: Innovative Statistics
+      body: >-
+        This captures that invisible lost time. You don’t need to be a
+        statistician to use RIGPRO data. Numerous  built-in reports, charts, and
+        graphs give you instant and informative visual feedback. One client was
+        surprised to learn, based on RIGPRO analysis that invisible lost time -
+        resulting from inadequate moving speeds - amounted to 3 hours on a
+        single job. That was costing our client $210,000. How much does it cost
+        you?
+    part2:
+      title: Preformance Records
+      body: >-
+        Consider tendering for an upcoming EWL campaign: Is there adequate hard
+        data available to support a particular choice of a service provider? Has
+        the tool reliability been considered? Has historical crew performance
+        been quantified and input into the equation? What about logging speeds?
+        Has the best tool been selected for a given geology, mud system and
+        conveyance method? Get all your answers in a few clicks – let RIGPRO
+        software do the math for you.
 ---
 Both RIGPRO client (desktop application) as well as mobile applications connect to the server, which is the heart of  the RIGPRO platform. The server is cloud based and is configured and tailored individually for each company.
 
