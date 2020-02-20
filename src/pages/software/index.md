@@ -21,6 +21,31 @@ sections:
         job. From the current tool string depth to the accurate time statistics,
         any information is readily available. Current problems, as well as
         potential issues, are distributed across the teams.
+  - image:
+      altText: Comunication
+      image: /img/SemaPlatforme.png
+    part1:
+      title: Comunication
+      body: >-
+        Being in a position to wait for an update via email can be a frustrating
+        communication nightmare. RIGPRO information exchange is fast, efficient
+        and – best of all – not dependent on a field personnel’s ability to take
+        a timeout and jot down an email. With RIGPRO on your desktop and mobile
+        devices, you are constantly in touch with the logging progress. You can
+        see what’s going on, your team in the office knows what’s going
+        on…everyone knows what’s going on. Operational transparency and time
+        efficiency is guaranteed!
+    part2:
+      title: Dana-Driven Decision-Making
+      body: >-
+        This is finally possible during the operation, because you are in the
+        know at all times. Key information is entered once and is reused
+        throughout the RIGPRO platform. Track the logging progress, visualize
+        job flow, QC the data, and monitor tool and crew movements in real-time,
+        all at your fingertips. Say, for example, the logging string is stuck
+        and you need to react fast. You can visualize the logging string in a
+        realistic borehole model within seconds, determine the probable sticking
+        mechanism and quickly decide on a course of action.
 ---
 Both RIGPRO client (desktop application) as well as mobile applications connect to the server, which is the heart of  the RIGPRO platform. The server is cloud based and is configured and tailored individually for each company.
 
