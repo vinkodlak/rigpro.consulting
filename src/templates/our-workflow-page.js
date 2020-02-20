@@ -21,7 +21,7 @@ const OurWorkflowPage = ({ data }) => {
   const { markdownRemark: post } = data
 
   return (
-    <Layout 
+    <Layout
       header={(
         <Header><h1>{post.frontmatter.title}</h1></Header>
       )}

@@ -1,8 +1,36 @@
 :root {
 
+  --lightgray: #F3F4F6;
+  --blue: #125575;
+  --gray: #8990AA;
+
   --gridGap: 40px;
   --col: calc((1104px - (11 * var(--gridGap))) / 12);
   --mainGrid: minmax(0px, 1fr) repeat(12, minmax(auto, var(--col))) minmax(0px, 1fr);
 
   --SegoeUI: 'Segoe UI', 'Open Sans', sans-serif;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 14px;
+  line-height: 1.571;
+  font-family: var(--SegoeUI);
+  color: var(--gray);
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2, h3, h4 {
+  color: var(--blue);
 }

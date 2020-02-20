@@ -154,9 +154,9 @@ const WorkflowItem = ({ image, title, description, body, row }) => {
       <Workflow style={{ "--gridRow": row }} className={isOpen && 'open'} onClick={toggleOpen}>
         <Image ref={imageDiv}>
           {(image.childImageSharp && (
-            <Img fluid={image.childImageSharp.fluid} />
+            <Img fluid={image.childImageSharp.fluid} alt={title} />
           )) || (
-            <img src={image} />
+            <img src={image} alt={title} />
           )}
         </Image>
         <Content>
