@@ -69,6 +69,26 @@ sections:
         Has the best tool been selected for a given geology, mud system and
         conveyance method? Get all your answers in a few clicks – let RIGPRO
         software do the math for you.
+  - image:
+      altText: Reporting and Deliverables
+      image: /img/desktop.png
+    part1:
+      title: Reporting and Deliverables
+      body: >-
+        Always at the tip of your fingers. RIGPRO challenges a crucial paradigm
+        of wireline logging QC process, by delivering a database instead of a
+        document. However, everyone still needs reports… which is why there's an
+        easy-to-use module just for that purpose. Now you can create a relevant
+        report in just a few clicks.
+    part2:
+      title: We're all Visual Beings
+      body: >-
+        See in 3D what is going on 300 miles from the rig. It’s difficult to
+        envision tool-string in an immense, tens-of-thousands-of-feet deep
+        borehole. Use RIGPRO’s advanced 3D borehole and calliper rendering Depth
+        View 3D module that is no longer an issue. Now, you can visualize the
+        tool-string in a realistic borehole model within seconds and quickly
+        decide on a course of action.
 ---
 Both RIGPRO client (desktop application) as well as mobile applications connect to the server, which is the heart of  the RIGPRO platform. The server is cloud based and is configured and tailored individually for each company.
 
