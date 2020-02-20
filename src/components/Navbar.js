@@ -1,98 +1,75 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import github from '../img/github-icon.svg'
+import styled from 'styled-components'
+
 import logo from '../img/logo.svg'
 
-const Navbar = class extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      active: false,
-      navBarActiveClass: '',
+const Container = styled.div`
+  height: 100px;
+  grid-column: 2 / span 12;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 20px;
+  border-bottom: 2px solid rgba(255,255,255,0.1);
+  align-items: center;
+`
+const Logo = styled.div`
+`
+const Nav = styled.nav`
+position: absolute;
+width: 100%;
+display: grid;
+grid-template-columns: var(--mainGrid);
+grid-gap: var(--gridGap);
+`
+const Login = styled(Link)`
+  background-color: #fff;
+  color: #125575;
+  padding: 12px 70px;
+  border-radius: 50px;
+  font-weight: 400;
+`
+const Ul = styled.ul`
+  justify-self: end;
+  display: flex;
+
+  li {
+    font: 700 14px var(--SegoeUI);
+    
+    a:not(${Login}) {
+      text-transform: uppercase;
+      padding: 5px;
+      color: #fff;
+    }
+
+    &:not(:last-of-type) {
+      margin-right: 40px;
+
     }
   }
+`
 
-  toggleHamburger = () => {
-    // toggle the active boolean in the state
-    this.setState(
-      {
-        active: !this.state.active,
-      },
-      // after state has been updated,
-      () => {
-        // set the class in state for the navbar accordingly
-        this.state.active
-          ? this.setState({
-              navBarActiveClass: 'is-active',
-            })
-          : this.setState({
-              navBarActiveClass: '',
-            })
-      }
-    )
-  }
 
-  render() {
-    return (
-      <nav
-        className="navbar is-transparent"
-        role="navigation"
-        aria-label="main-navigation"
-      >
-        <div className="container">
-          <div className="navbar-brand">
-            <Link to="/" className="navbar-item" title="Logo">
-              <img src={logo} alt="Kaldi" style={{ width: '88px' }} />
-            </Link>
-            {/* Hamburger menu */}
-            <div
-              className={`navbar-burger burger ${this.state.navBarActiveClass}`}
-              data-target="navMenu"
-              onClick={() => this.toggleHamburger()}
-            >
-              <span />
-              <span />
-              <span />
-            </div>
-          </div>
-          <div
-            id="navMenu"
-            className={`navbar-menu ${this.state.navBarActiveClass}`}
-          >
-            <div className="navbar-start has-text-centered">
-              <Link className="navbar-item" to="/about">
-                About
-              </Link>
-              <Link className="navbar-item" to="/products">
-                Products
-              </Link>
-              <Link className="navbar-item" to="/blog">
-                Blog
-              </Link>
-              <Link className="navbar-item" to="/contact">
-                Contact
-              </Link>
-              <Link className="navbar-item" to="/contact/examples">
-                Form Examples
-              </Link>
-            </div>
-            <div className="navbar-end has-text-centered">
-              <a
-                className="navbar-item"
-                href="https://github.com/netlify-templates/gatsby-starter-netlify-cms"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span className="icon">
-                  <img src={github} alt="Github" />
-                </span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </nav>
-    )
-  }
+export default () => {
+  return (
+    <Nav>
+      <Container>
+        <Logo>
+          <Link>
+            <img src={logo} alt="RIGPRO Consulting" />
+          </Link>
+        </Logo>
+        <Ul>
+          <li><Link to={`/`}>Home</Link></li>
+          <li><Link to={`/our-workflow`}>Our workflow</Link></li>
+          <li><Link to={`/software`}>Software</Link></li>
+          <li><Link to={`/courses`}>Courses</Link></li>
+          <li><Link to={`/blog`}>Blog</Link></li>
+          <li><Link to={`/about`}>About</Link></li>
+          <li><Login to={`/login`}>Log In</Login></li>
+        </Ul>
+      </Container>
+    </Nav>
+  )
 }
 
-export default Navbar

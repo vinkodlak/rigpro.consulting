@@ -1,13 +1,25 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
-import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
 import './all.sass'
 import './style.scss'
 import useSiteMetadata from './SiteMetadata'
 import { withPrefix } from 'gatsby'
+import styled from 'styled-components'
 
-const TemplateWrapper = ({ children }) => {
+
+const Grid = styled.div`
+  display: grid;
+  grid-template-columns: var(--mainGrid);
+  grid-gap: var(--gridGap);
+`
+const Container = styled.main`
+  grid-column: 2 / span 12;
+  margin: 100px 0;
+`
+
+const TemplateWrapper = ({ header, children }) => {
   const { title, description } = useSiteMetadata()
   return (
     <div>
@@ -49,8 +61,16 @@ const TemplateWrapper = ({ children }) => {
           content={`${withPrefix('/')}img/og-image.jpg`}
         />
       </Helmet>
+
       <Navbar />
-      <div>{children}</div>
+
+      {header}
+
+      <Grid>
+        <Container>
+          {children}
+        </Container>
+      </Grid>
       <Footer />
     </div>
   )

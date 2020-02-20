@@ -2,29 +2,12 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
-import Content, { HTMLContent } from '../components/Content'
-import Workflow from "../components/Workflow"
+import Header from '../components/Header'
+import Workflow from '../components/Workflow'
 
-
-export const OurWorkflowPageTemplate = ({ title, workflows, contentComponent }) => {
-  const PageContent = contentComponent || Content
-
+export const OurWorkflowPageTemplate = ({ title, workflows }) => {
   return (
-    <section className="section section--gradient">
-      <div className="container">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <div className="section">
-              <h1 className="title is-size-3 has-text-weight-bold is-bold-light">
-                {title} workflow page
-              </h1>
-
-              <Workflow workflows={workflows} />              
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <Workflow workflows={workflows} />
   )
 }
 
@@ -38,10 +21,12 @@ const OurWorkflowPage = ({ data }) => {
   const { markdownRemark: post } = data
 
   return (
-    <Layout>
+    <Layout 
+      header={(
+        <Header><h1>{post.frontmatter.title}</h1></Header>
+      )}
+    >
       <OurWorkflowPageTemplate
-        contentComponent={HTMLContent}
-        title={post.frontmatter.title}
         workflows={post.frontmatter.workflows}
       />
     </Layout>
