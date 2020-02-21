@@ -77,6 +77,7 @@ const Ul = styled.ul`
   justify-self: end;
   display: flex;
   list-style-type: none;
+  padding: 0;
 
   li {
     font: 700 14px var(--SegoeUI);
