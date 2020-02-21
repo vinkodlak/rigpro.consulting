@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
+import GlobalContainer from '../components/Container'
 
 import logo from '../img/logo.svg'
 import facebook from '../img/social/facebook.svg'
@@ -16,8 +17,7 @@ const Footer = styled.footer`
   grid-gap: var(--gridGap);
   align-items: center;
 `
-const Container = styled.div`
-  grid-column: 2 / span 12;
+const Container = styled(GlobalContainer)`
   display: grid;
   grid-template-columns: auto 1fr auto;
   grid-gap: 20px;

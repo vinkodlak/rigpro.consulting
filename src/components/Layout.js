@@ -11,7 +11,6 @@ import styled from 'styled-components'
 const Grid = styled.div`
   display: grid;
   grid-template-columns: var(--mainGrid);
-  grid-gap: var(--gridGap);
 `
 
 const TemplateWrapper = ({ header, children }) => {

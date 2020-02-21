@@ -5,6 +5,7 @@ import Img from 'gatsby-image'
 import styled from 'styled-components'
 import Layout from '../components/Layout'
 import Header from '../components/Header'
+import Container from '../components/Container'
 
 import logo from '../img/logo-software.svg'
 
@@ -56,7 +57,7 @@ const Section = styled.section`
 `
 
 export const SoftwarePageTemplate = ({ content, sections }) => (
-  <>
+  <Container mt="100" mb="100">
     <TopSection>
       <img src={logo} alt=""/>
       <div dangerouslySetInnerHTML={{ __html: content }}/>
@@ -83,7 +84,7 @@ export const SoftwarePageTemplate = ({ content, sections }) => (
         </Parts>
       </Section>
     ))}
-  </>
+  </Container>
 )
 
 SoftwarePageTemplate.propTypes = {

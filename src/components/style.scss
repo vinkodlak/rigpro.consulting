@@ -1,15 +1,25 @@
 :root {
-
   --lightgray: #F3F4F6;
   --blue: #125575;
   --gray: #8990AA;
 
-  --gridGapHoriz: 40px;
+  --gridGapHoriz: 0;
   --gridGap: 0 var(--gridGapHoriz);
-  --col: calc((1104px - (11 * var(--gridGapHoriz))) / 12);
-  --mainGrid: minmax(0px, 1fr) repeat(12, minmax(auto, var(--col))) minmax(0px, 1fr);
-
+  // --col: calc((var(--container) - (11 * var(--gridGapHoriz))) / 12);
+  // --mainGrid: minmax(0px, 1fr) repeat(12, minmax(0, var(--col))) minmax(0px, 1fr);
+  --mainGrid: 
+    [full-start] minmax(15px, 1fr) 
+    [container-start] minmax(0, var(--container)) [container-end]
+    minmax(15px, 1fr) [full-end];
   --SegoeUI: 'Segoe UI', 'Open Sans', sans-serif;
+
+  --container: 1170px;
+  @media (max-width: 1199px) {
+    --container: 970px;
+  }
+  @media (max-width: 991px) {
+    --container: 750px;
+  }
 }
 
 html, body {
@@ -38,4 +48,13 @@ a {
 
 h2, h3, h4 {
   color: var(--blue);
+}
+
+.menu-burger {
+  span,
+  span:before,
+  span:after {
+    height: 2px;
+    border-radius: 2px;
+  }
 }
