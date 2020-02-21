@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
-import gsap from 'gsap'
 
 import logo from '../img/logo.svg'
 import GlobalContainer from '../components/Container'
@@ -136,7 +135,6 @@ const Burger = styled.div`
 
 export default () => {
   const [isActive, setActive] = useState(false)
-  const navDiv = useRef(null)
   const toggleActive = () => {
     setActive(!isActive)
   }
