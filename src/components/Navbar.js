@@ -32,6 +32,7 @@ const Login = styled(Link)`
 const Ul = styled.ul`
   justify-self: end;
   display: flex;
+  list-style-type: none;
 
   li {
     font: 700 14px var(--SegoeUI);

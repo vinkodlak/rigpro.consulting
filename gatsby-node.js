@@ -3,6 +3,54 @@ const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
 const { fmImagesToRelative } = require('gatsby-remark-relative-images')
 
+const remark = require("remark");
+const remarkHTML = require("remark-html");
+
+const processField = (field) => {
+  return remark().use(remarkHTML).processSync(field).toString()
+}
+
+exports.createResolvers = ({ createResolvers  }) => {
+  const resolvers = {
+    MarkdownRemarkFrontmatterSection1: {
+      body: {
+        resolve: (source) => processField(source.body)
+      }
+    },
+    MarkdownRemarkFrontmatterSection2: {
+      body: {
+        resolve: (source) => processField(source.body)
+      },
+    },
+    MarkdownRemarkFrontmatterSection3: {
+      body: {
+        resolve: (source) => processField(source.body)
+      }
+    },
+    MarkdownRemarkFrontmatterSection2Experiences: {
+      body: {
+        resolve: (source) => processField(source.body)
+      }
+    },
+    MarkdownRemarkFrontmatterWorkflows: {
+      body: {
+        resolve: (source) => processField(source.body)
+      }
+    },
+    MarkdownRemarkFrontmatterSectionsPart1: {
+      body: {
+        resolve: (source) => processField(source.body)
+      }
+    },
+    MarkdownRemarkFrontmatterSectionsPart2: {
+      body: {
+        resolve: (source) => processField(source.body)
+      }
+    },
+  }
+  createResolvers(resolvers)
+}
+
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
 
@@ -34,7 +82,6 @@ exports.createPages = ({ actions, graphql }) => {
       const id = edge.node.id
       createPage({
         path: edge.node.fields.slug,
-        tags: edge.node.frontmatter.tags,
         component: path.resolve(
           `src/templates/${String(edge.node.frontmatter.templateKey)}.js`
         ),
@@ -82,5 +129,14 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       node,
       value,
     })
+
+    // if (node.frontmatter.templateKey == 'about-page') {
+    //   const body = node.frontmatter.section1.body
+
+    //   if (body) {
+    //     parseField(node, body, 'body', createNodeField)
+    //   }
+    // }
+
   }
 }

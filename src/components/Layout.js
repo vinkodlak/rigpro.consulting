@@ -13,10 +13,6 @@ const Grid = styled.div`
   grid-template-columns: var(--mainGrid);
   grid-gap: var(--gridGap);
 `
-const Container = styled.main`
-  grid-column: 2 / span 12;
-  margin: 100px 0;
-`
 
 const TemplateWrapper = ({ header, children }) => {
   const { title, description } = useSiteMetadata()
@@ -66,9 +62,7 @@ const TemplateWrapper = ({ header, children }) => {
       {header}
 
       <Grid>
-        <Container>
-          {children}
-        </Container>
+        {children}
       </Grid>
       <Footer />
     </div>
