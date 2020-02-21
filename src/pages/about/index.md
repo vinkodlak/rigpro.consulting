@@ -1,4 +1,116 @@
 ---
-templateKey: 'about-page'
-path: /about
+templateKey: about-page
+title: About
+section1:
+  body: >-
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+    ligula eget dolor. Aenean massa. Cum  sociis natoque penatibus et magnis dis
+    parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, 
+
+    pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. 
+
+
+    Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim
+    justo, rhoncus ut, imperdiet a, venenatis  vitae, justo. Nullam dictum felis
+    eu pede mollis pretium.
+  title: Our Experts
+section2:
+  body: >-
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+    ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
+    parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
+    pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. 
+
+
+    Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim
+    justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis
+    eu pede mollis pretium.
+  countries:
+    - RU
+    - KE
+    - UG
+    - TZ
+    - EG
+    - LY
+    - MR
+    - GQ
+    - GA
+    - GH
+    - AZ
+    - GE
+    - KZ
+    - IL
+    - KW
+    - OM
+    - SA
+    - TR
+    - BN
+    - MY
+    - CN
+    - IN
+    - 'NO'
+    - CY
+    - DK
+    - GB
+    - NL
+    - AL
+    - BG
+    - HR
+    - DE
+    - HU
+    - IT
+    - RO
+    - ES
+    - CH
+    - US
+    - FK
+  experiences:
+    - body: |-
+        Lorem Ipsum
+
+        * One
+        * Two
+        * Three
+    - body: |-
+
+
+        Lorem Ipsum
+
+        * One
+        * Two
+        * Three
+    - body: |-
+
+
+        Lorem Ipsum
+
+        * One
+        * Two
+        * Three
+    - body: |-
+
+
+        Lorem Ipsum
+
+        * One
+        * Two
+        * Three
+  title: Our Experience
+section3:
+  body: >-
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+    ligula eget dolor. Aenean massa. Cum  sociis natoque penatibus et magnis dis
+    parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, 
+
+    pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. 
+
+
+    Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim
+    justo, rhoncus ut, imperdiet a, venenatis  vitae, justo. Nullam dictum felis
+    eu pede mollis pretium.
+  image:
+    altText: Our company
+    image: /img/desktop.png
+  title: Our Company
 ---
+
