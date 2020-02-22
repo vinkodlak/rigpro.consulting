@@ -18,10 +18,12 @@ const TopSection = styled.section`
   div {
     width: 686px;
     margin: 0 auto;
+    
+    @media (max-width: 716px) {
+      width: initial;
+    }
   }
-  @media (max-width: 716px) {
-    width: initial;
-  }
+  
 `
 const Image = styled.div``
 const Parts = styled.div``
@@ -67,7 +69,7 @@ const Section = styled.section`
       grid-column: 5 / span 7;
       grid-row: 1;
     }
-    
+
     @media (max-width: 991px) {
       ${Image} {
         grid-column: 1 / -1;
