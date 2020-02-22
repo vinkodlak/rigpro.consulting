@@ -2,26 +2,12 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
-import Content from '../components/Content'
+import HeaderHome from '../components/HeaderHome'
 
-export const IndexPageTemplate = ({ title, content, contentComponent }) => {
-  const PageContent = contentComponent || Content
+export const IndexPageTemplate = ({ title, content }) => {
 
   return (
-    <section className="section section--gradient">
-      <div className="container">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <div className="section">
-              <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-                {title} (titled?)
-              </h2>
-              <PageContent className="content" content={content} />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <div></div>
   )
 }
 
@@ -35,7 +21,11 @@ const IndexPage = ({ data }) => {
   const { markdownRemark: post } = data
 
   return (
-    <Layout>
+    <Layout
+      header={(
+        <HeaderHome data={post.frontmatter.mainPitch} />
+      )}
+    >
       <IndexPageTemplate
         title={post.frontmatter.title}
         content={`kontent`}
@@ -57,6 +47,10 @@ export const IndexPageQuery = graphql`
       html
       frontmatter {
         title
+        mainPitch {
+          title
+          body
+        }
       }
     }
   }

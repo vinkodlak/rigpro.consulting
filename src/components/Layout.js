@@ -8,8 +8,8 @@ import { withPrefix } from 'gatsby'
 import styled from 'styled-components'
 
 
-const Grid = styled.div`
-  display: grid;
+const Grid = styled.main`
+display: grid;
   grid-template-columns: var(--mainGrid);
 `
 

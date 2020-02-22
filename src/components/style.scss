@@ -35,6 +35,10 @@ body {
   color: var(--gray);
 }
 
+main {
+  min-height: calc(100vh - 300px);
+}
+
 p:last-of-type {
   margin-bottom: 0;
 }
