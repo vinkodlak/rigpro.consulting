@@ -16,11 +16,12 @@ const Button = styled.div`
 
   @media (max-width: 767px) {
     grid-column: 1;
+    justify-content: start;
   }
   
   svg {
     position: relative;
-    top: 10px;
+    top: 18px;
     z-index: 10;
     transition: transform 0.3s ease;
     cursor: pointer;
@@ -62,6 +63,7 @@ const Content = styled.div`
 `
 const Title = styled.h2`
   font: 700 1.125rem var(--SegoeUI);
+  margin-top: 0;
   margin-bottom: 5px;
 `
 const Desc = styled.div`

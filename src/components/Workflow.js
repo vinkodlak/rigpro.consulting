@@ -9,7 +9,7 @@ const Grid = styled.section`
   grid-gap: 12px 0;
 
   @media (max-width: 767px) {
-    grid-template-columns: 80px 1fr;
+    grid-template-columns: 45px 1fr;
   }
 `
 const Timeline = styled.footer`
@@ -21,6 +21,7 @@ const Timeline = styled.footer`
 
   @media (max-width: 767px) {
     grid-column: 1;
+    background-position-x: 14px;
   }
 `
 

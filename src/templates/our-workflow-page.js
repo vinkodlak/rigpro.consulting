@@ -3,11 +3,14 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Header from '../components/Header'
+import Container from '../components/Container'
 import Workflow from '../components/Workflow'
 
 export const OurWorkflowPageTemplate = ({ title, workflows }) => {
   return (
-    <Workflow workflows={workflows} />
+    <Container mt="50" mb="50">
+      <Workflow workflows={workflows} />
+    </Container>
   )
 }
 

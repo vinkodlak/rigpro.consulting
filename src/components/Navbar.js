@@ -44,6 +44,7 @@ const Login = styled(Link)`
 const Ul = styled.ul`
   @media (max-width: 991px) {
     opacity: 0;
+    pointer-events: none;
     position: absolute;
     top: 0;
     left: 0;
@@ -71,6 +72,7 @@ const Ul = styled.ul`
     }
     &.is-active {
       opacity: 1;
+      pointer-events: initial;
     }
   }
 
@@ -105,6 +107,13 @@ const Ul = styled.ul`
         background-color: rgba(255,255,255,0.5);
         opacity: 0;
         transition: opacity 0.5s ease;
+
+      }
+
+      @media (max-width: 991px) {
+        &:after {
+          display: none;
+        }
       }
 
       &.active:after,
@@ -125,6 +134,8 @@ const Ul = styled.ul`
 const Burger = styled.div`
   justify-self: end;
   z-index: 100;
+  margin-right: -15px;
+  
   button:focus {
     outline: none;
   }

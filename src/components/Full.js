@@ -3,12 +3,14 @@ import styled from 'styled-components'
 
 const Full = styled.div`
   grid-column: full;
-  margin-top: ${props => `${parseInt(props.mt)}px`};
-  margin-bottom: ${props => `${parseInt(props.mb)}px`};
+  margin-top: ${props => props.mt ? `${parseInt(props.mt)}px` : 'initial'};
+  margin-bottom: ${props => props.mb ? `${parseInt(props.mb)}px` : 'initial'};
+  display: grid;
+  grid-template-columns: var(--mainGrid);
 `
 
-export default ({ children, mt, mb }) => (
-  <Full mt={mt} mb={mb}>
-    { children }
+export default (props) => (
+  <Full mt={props.mt} mb={props.mb} className={props.className}>
+    { props.children }
   </Full>
 )
