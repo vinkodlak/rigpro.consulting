@@ -3,7 +3,7 @@
   --blue: #125575;
   --gray: #8990AA;
 
-  --gridGapHoriz: 0;
+  --gridGapHoriz: 40px;
   --gridGap: 0 var(--gridGapHoriz);
   // --col: calc((var(--container) - (11 * var(--gridGapHoriz))) / 12);
   // --mainGrid: minmax(0px, 1fr) repeat(12, minmax(0, var(--col))) minmax(0px, 1fr);

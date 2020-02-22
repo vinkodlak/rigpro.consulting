@@ -17,6 +17,19 @@ const Full = styled(GlobalFull)`
 `
 const Title = styled.h2`
   font: 700 55px var(--SegoeUI);
+  margin: 26px 0 50px;
+  position: relative;
+
+  &:before {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 5px;
+    background-color: var(--gray);
+    position: absolute;
+    top: -25px;
+    left: ${props => props.right? `calc(100% - 50px)` : `0px`};
+  }
 `
 const Text = styled.div``
 const Section1 = styled.section`
@@ -35,7 +48,7 @@ const Experts = styled.div`
 const Section2 = styled.section`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, auto);
+  grid-template-rows: auto 1fr auto;
   grid-gap: var(--gridGap);
   
   ${Title},
@@ -118,7 +131,7 @@ const CompanyImage = styled.div`
 
 export const AboutPageTemplate = ({ section1, section2, section3 }) => (
   <>
-    <Container>
+    <Container mt="50">
       <Section1>
         <Experts>
           <Title>{section1.title}</Title>
@@ -134,7 +147,7 @@ export const AboutPageTemplate = ({ section1, section2, section3 }) => (
             <World />
           </Map>
           {/* <ExperienceInfo> */}
-          <Title>{section2.title}</Title>
+          <Title right>{section2.title}</Title>
           <Text dangerouslySetInnerHTML={{ __html: section2.body }} />
           {/* </ExperienceInfo> */}
           {section2.experiences.map((exp, index) => (

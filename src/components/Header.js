@@ -23,7 +23,7 @@ h1 {
     display: block;
     width: 52px;
     height: 6px;
-    background-color: #8990aa;
+    background-color: var(--gray);
     position: absolute;
     top: -26px;
     left: calc(50% - 26px);

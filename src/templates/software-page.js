@@ -19,6 +19,9 @@ const TopSection = styled.section`
     width: 686px;
     margin: 0 auto;
   }
+  @media (max-width: 716px) {
+    width: initial;
+  }
 `
 const Image = styled.div``
 const Parts = styled.div``
@@ -43,6 +46,17 @@ const Section = styled.section`
       grid-column: 1 / span 8;
       grid-row: 1;
     }
+
+    @media (max-width: 991px) {
+      ${Image} {
+        grid-column: 1 / -1;
+        grid-row: 1;
+      }
+      ${Parts} {
+        grid-column: 1 / -1;
+        grid-row: 2;
+      }
+    }
   }
   &:nth-of-type(2n) {
     ${Image} {
@@ -52,6 +66,17 @@ const Section = styled.section`
     ${Parts} {
       grid-column: 5 / span 7;
       grid-row: 1;
+    }
+    
+    @media (max-width: 991px) {
+      ${Image} {
+        grid-column: 1 / -1;
+        grid-row: 1;
+      }
+      ${Parts} {
+        grid-column: 1 / -1;
+        grid-row: 2;
+      }
     }
   }
 `
