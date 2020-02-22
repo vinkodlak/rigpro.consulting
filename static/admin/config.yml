@@ -50,26 +50,21 @@ collections:
         fields:
           - { label: "Template Key", name: templateKey, widget: hidden, default: index-page }
           - { label: Title, name: title, widget: string }
-          - { label: "Main Pitch",
+          - { label: Meta Description, name: metaDescription, widget: text }
+          - { label: "Main Pitch Carousel",
               name: mainPitch,
               widget: object,
               fields: [
-                { label: Title, name: title, widget: string },
-                { label: Body, name: body, widget: markdown },
                 { label: Carousel, name: carousel, widget: list,
                   fields: [
                     { label: Image, name: image, widget: image }
-                  ]
-                },
-                { label: "Link", name: link, widget: object,
-                  fields: [
-                    { label: "Link Text", name: text, widget: string },
-                    { label: "Link URL", name: url, widget: string },
-                    { label: "Open in new tab?", name: newTab,widget: boolean, default: false }
+                    { label: Title, name: title, widget: string },
+                    { label: Body, name: body, widget: markdown },
                   ]
                 }
               ]
             }
+          - { label: Body, name: body, widget: markdown }
           - { label: Pitches, name: pitches, widget: list,
               fields: [
                 { label: Title, name: title, widget: string },

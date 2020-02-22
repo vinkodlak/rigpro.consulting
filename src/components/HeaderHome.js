@@ -54,7 +54,7 @@ left: calc(50vw - 455px);
 @media (max-width: 991px) {
   background-image: url(${maskRight});
   grid-column: 2 / -2;
-  grid-row: 4 / -1;
+  grid-row: 3 / -1;
   left: initial;
 }
 `
@@ -66,9 +66,9 @@ color: #fff;
 position: relative;
 
 @media (max-width: 991px) {
-  grid-column: 2 / -2;
-  grid-row: 4 / -1;
-  padding: 75px;
+  grid-column: 3 / -3;
+  grid-row: 3 / -1;
+  padding: 50px 0;
 }
 `
 const Title = styled.div`
