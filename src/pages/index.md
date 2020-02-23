@@ -1,6 +1,6 @@
 ---
 templateKey: index-page
-title: Home
+title: RIGPRO Consulting
 metaDescription: Home page meta description
 mainPitch:
   carousel:
@@ -28,5 +28,6 @@ mainPitch:
         dis parturient montes, nascetur ridiculus mus. Donec quam felis,
         ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
         quis enim.
+pitches: []
 ---
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
