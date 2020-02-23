@@ -1,8 +1,7 @@
-import React, { useState, createRef, useEffect } from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
-import gsap from 'gsap'
-
-import maskRight from '../img/home-mask-right.svg'
+import Img from 'gatsby-image'
+import maskRect from '../img/home-mask-right.svg'
 import mask from '../img/home-mask.svg'
 
 const Header = styled.div`
@@ -49,7 +48,7 @@ position relative;
 left: calc(50vw - 455px);
 
 @media (max-width: 991px) {
-  background-image: url(${maskRight});
+  background-image: url(${maskRect});
   grid-column: 2 / -2;
   grid-row: 3 / -1;
   left: initial;
@@ -108,16 +107,28 @@ const Title = styled.div`
     --barWidth: 40px;
   }
 `
-const Bg = styled.div`
-  background-image: url(${props => props.bg});
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+// const Bg = styled.div`
+//   background-image: url(${props => props.bg});
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   background-position: center;
+//   width: 100%;
+//   height: 100%;
+//   position: absolute;
+//   top: 0;
+//   left: ${props => props.index * 100}%;
+// `
+const BG = styled.div`
+  position: absolute;
   width: 100%;
   height: 100%;
-  position: absolute;
   top: 0;
   left: ${props => props.index * 100}%;
+
+  .gatsby-image-wrapper {
+    width: 100%!important;
+    height: 100%!important;
+  }
 `
 const Buttons = styled.div`
   grid-column: 1 / -1;
@@ -150,17 +161,14 @@ const Button = styled.div`
 export default ({ data }) => {
   const arrLength = data.carousel.length
   const [active, setActive] = useState(0)
-  // const [elRefs, setElRefs] = useState([])
 
-  // useEffect(() => {
-  //   setElRefs(elRefs => (
-  //     Array(arrLength).fill().map((_, i) => elRefs[i] || createRef())
-  //   ));
-  // }, [arrLength])
-
+  const carouselPrev = () => {
+    const newActive = active - 1
+    setActive(newActive < 0? arrLength-1 : newActive)
+  }
   const carouselNext = () => {
     const newActive = active + 1
-    setActive(newActive == arrLength? 0 : newActive)
+    setActive(newActive === arrLength? 0 : newActive)
   }
   const carouselIndex = (index) => {
     setActive(index)
@@ -170,7 +178,10 @@ export default ({ data }) => {
     <Header>
       <ImageWrap active={active}>
         {data.carousel.map((item, index) => (
-          <Bg key={index} bg={item.image.publicURL} index={index} />
+          // <Bg key={index} bg={item.image.publicURL} index={index} />
+          <BG key={index} index={index}>
+            <Img fixed={item.image.childImageSharp.fixed} />
+          </BG>
         ))}
       </ImageWrap>
       {/* <Image /> */}
@@ -178,7 +189,7 @@ export default ({ data }) => {
       <TextWrap>
         {data.carousel.map((item, index) => (
           // ref={elRefs[index]}
-          <Text key={index} className="ttt"  active={index == active}>
+          <Text key={index} active={index === active}>
             <Title>{item.title}</Title>
             <div dangerouslySetInnerHTML={{ __html: item.body }} />
           </Text>
@@ -186,7 +197,7 @@ export default ({ data }) => {
       </TextWrap>
       <Buttons>
         {data.carousel.map((item, index) => (
-          <Button key={index} active={index == active} onClick={() => carouselIndex(index)} />
+          <Button key={index} active={index === active} onClick={() => carouselIndex(index)} />
         ))}
       </Buttons>
         {/* <button onClick={carouselNext} style={{cursor: 'pointer', zIndex:100}}>button</button> */}

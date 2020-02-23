@@ -52,8 +52,11 @@ export const IndexPageQuery = graphql`
             image {
               publicURL
               childImageSharp {
-                fixed {
-                  ...GatsbyImageSharpFixed
+                fluid {
+                  ...GatsbyImageSharpFluid_withWebp
+                }
+                fixed(height: 630, quality: 90) {
+                  ...GatsbyImageSharpFixed_withWebp
                 }
               }
             }
