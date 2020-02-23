@@ -3,11 +3,33 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import HeaderHome from '../components/HeaderHome'
+import Container from '../components/Container'
+import logoBlue from '../img/logo-blue.svg'
+import styled from 'styled-components'
 
-export const IndexPageTemplate = ({ title, content }) => {
+const H1Img = styled.h1`
+  margin: 0 0 50px;
+  text-align: center;
+`
+const LogoText = styled.div`
+  width: 686px;
+  margin: 0 auto;
+  text-align: center;
+  
+  @media (max-width: 716px) {
+    width: initial;
+  }
+`
+
+export const IndexPageTemplate = ({ data }) => {
 
   return (
-    <div></div>
+    <Container mt="50">
+      <H1Img>
+        <img src={logoBlue} alt={data.frontmatter.title}/>
+      </H1Img>
+      <LogoText dangerouslySetInnerHTML={{ __html: data.html}} />
+    </Container>
   )
 }
 
@@ -27,8 +49,7 @@ const IndexPage = ({ data }) => {
       )}
     >
       <IndexPageTemplate
-        title={post.frontmatter.title}
-        content={`kontent`}
+        data={post}
       />
     </Layout>
   )

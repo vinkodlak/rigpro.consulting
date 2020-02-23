@@ -75,11 +75,18 @@ collections:
                     { label: "Alt Text", name: altText, widget: string }
                   ]
                 },
-                { label: "Link", name: link, widget: object,
+                { label: "Link", name: link, widget: object, required: false,
                   fields: [
                     { label: "Link Text", name: text, widget: string },
                     { label: "Link URL", name: url, widget: string },
                     { label: "Open in new tab?", name: newTab,widget: boolean, default: false }
+                  ]
+                }
+                { label: "Video Link", name: videoLink, widget: object, required: false,
+                  fields: [
+                    { label: "Link Text", name: text, widget: string },
+                    { label: "Link URL", name: url, widget: string },
+                    { label: "Open in new tab?", name: newTab, widget: boolean, default: false }
                   ]
                 }
               ]
