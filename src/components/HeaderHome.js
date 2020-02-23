@@ -128,6 +128,7 @@ const BG = styled.div`
   .gatsby-image-wrapper {
     width: 100%!important;
     height: 100%!important;
+    display: block!important;
   }
 `
 const Buttons = styled.div`
