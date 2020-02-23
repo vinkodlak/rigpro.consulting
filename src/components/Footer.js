@@ -49,7 +49,7 @@ export default () => {
     <Footer>
       <Container>
         <Logo>
-          <Link>
+          <Link to={`/`}>
             <img src={logo} alt="RIGPRO Consulting" />
           </Link>
         </Logo>

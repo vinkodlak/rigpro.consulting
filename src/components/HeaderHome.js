@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { useState, createRef, useEffect } from 'react'
 import styled from 'styled-components'
+import gsap from 'gsap'
 
 import maskRight from '../img/home-mask-right.svg'
 import mask from '../img/home-mask.svg'
-import image from '../img/consulting_2.jpg'
 
 const Header = styled.div`
 display: grid;
@@ -12,24 +12,19 @@ grid-template-rows: 100px 1fr;
 overflow-x: hidden;
 min-height: 630px;
 position: relative;
-z-index:-1;
 
 @media (max-width: 991px) {
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(5, 1fr) minmax(auto, 1fr);
 }
 `
-const Image = styled.div`
+const ImageWrap = styled.div`
 grid-column: 1 / span 24;
 grid-row: 1 / span 2;
 width: 100%;
 height: 100%;
 max-height: 630px;
-background-image:url(${image});
-background-size: cover;
-background-repeat: no-repeat;
-background-position-x: center;
-background-position-y: center;
+position: relative;
 
 @media (max-width: 991px) {
   grid-column: 1 / -1;
@@ -58,18 +53,27 @@ left: calc(50vw - 455px);
   left: initial;
 }
 `
-const Text = styled.div`
+const TextWrap = styled.div`
 grid-column: 25 / span 12;
 grid-row: 2;
-align-self: center;
-color: #fff;
 position: relative;
-
+align-self: center;
 @media (max-width: 991px) {
   grid-column: 3 / -3;
   grid-row: 3 / -1;
   padding: 50px 0;
 }
+display: grid;
+`
+const Text = styled.div`
+color: #fff;
+grid-column: 1;
+grid-row: 1;
+opacity: ${props => props.active? `1` : `0`};
+pointer-events: ${props => props.active? `initial` : `none`};
+transform: ${props => props.active? `none` : `scale3d(0.95,0.95,1)`};
+transition: opacity 0.5s ease, transform 0.5s ease;
+transition-delay: ${props => props.active? `0.5s` : `0s`};
 `
 const Title = styled.div`
   text-transform: uppercase;
@@ -88,18 +92,53 @@ const Title = styled.div`
     left: ${props => props.right? `calc(100% - 50px)` : `0px`};
   }
 `
+const Bg = styled.div`
+  background-image: url(${props => props.bg});
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: ${props => props.index * 100}%;
+`
 
 export default ({ data }) => {
+  const arrLength = data.carousel.length
+  const [active, setActive] = useState(0)
+  // const [elRefs, setElRefs] = useState([])
+
+  // useEffect(() => {
+  //   setElRefs(elRefs => (
+  //     Array(arrLength).fill().map((_, i) => elRefs[i] || createRef())
+  //   ));
+  // }, [arrLength])
+
+  const carousel = () => {
+    const newActive = active + 1
+    setActive(newActive == arrLength? 0 : newActive)
+  }
+
   return (
     <Header>
-      <Image />
+      <ImageWrap>
+        {data.carousel.map((item, index) => (
+          <Bg key={index} bg={item.image.publicURL} index={index} />
+        ))}
+      </ImageWrap>
+      {/* <Image /> */}
       <Mask />
-      <Text>
-        <Title>{data.title}</Title>
-        <div>
-          { data.body }
-        </div>
-      </Text>
+      <TextWrap>
+        {data.carousel.map((item, index) => (
+          // ref={elRefs[index]}
+          <Text key={index} className="ttt"  active={index == active}>
+            <Title>{item.title}</Title>
+            <div dangerouslySetInnerHTML={{ __html: item.body }} />
+          </Text>
+        ))}
+        <button onClick={carousel} style={{cursor: 'pointer', zIndex:100}}>button</button>
+      </TextWrap>
     </Header>
   )
 }

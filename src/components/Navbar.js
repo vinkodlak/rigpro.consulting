@@ -26,6 +26,7 @@ const Logo = styled.div`
 const Nav = styled.nav`
 position: absolute;
 width: 100%;
+z-index: 100;
 display: grid;
 grid-template-columns: var(--mainGrid);
 grid-gap: var(--gridGap);
@@ -135,7 +136,7 @@ const Burger = styled.div`
   justify-self: end;
   z-index: 100;
   margin-right: -15px;
-  
+
   button:focus {
     outline: none;
   }
@@ -155,7 +156,7 @@ export default () => {
     <Nav>
       <Container>
         <Logo>
-          <Link>
+          <Link to={`/`}>
             <img src={logo} alt="RIGPRO Consulting" />
           </Link>
         </Logo>

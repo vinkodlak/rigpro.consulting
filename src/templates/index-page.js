@@ -48,8 +48,18 @@ export const IndexPageQuery = graphql`
       frontmatter {
         title
         mainPitch {
-          title
-          body
+          carousel {
+            image {
+              publicURL
+              childImageSharp {
+                fixed {
+                  ...GatsbyImageSharpFixed
+                }
+              }
+            }
+            title
+            body
+          }
         }
       }
     }
