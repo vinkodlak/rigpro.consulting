@@ -25,6 +25,8 @@ width: 100%;
 height: 100%;
 max-height: 630px;
 position: relative;
+transition: transform 0.7s ease-out;
+transform: translate3d(${props => props.active? `-${props.active * 100}%` : 0}, 0, 0);
 
 @media (max-width: 991px) {
   grid-column: 1 / -1;
@@ -122,7 +124,7 @@ export default ({ data }) => {
 
   return (
     <Header>
-      <ImageWrap>
+      <ImageWrap active={active}>
         {data.carousel.map((item, index) => (
           <Bg key={index} bg={item.image.publicURL} index={index} />
         ))}
