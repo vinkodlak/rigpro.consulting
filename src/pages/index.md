@@ -28,6 +28,19 @@ mainPitch:
         dis parturient montes, nascetur ridiculus mus. Donec quam felis,
         ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
         quis enim.
-pitches: []
+pitches:
+  - title: Title
+    body: Body
+    image:
+      altText: Alt image1
+      image: /img/Image-2.png
+    link:
+      newTab: false
+      text: l1
+      url: lurl
+    videoLink:
+      newTab: false
+      text: v1
+      url: v url
 ---
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
