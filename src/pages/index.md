@@ -29,8 +29,8 @@ mainPitch:
         ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
         quis enim.
 pitches:
-  - title: Title
-    body: Body
+  - title: Lorem ipsum
+    body: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum \rsociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, \r\npellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. \r\n\r\nDonec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis \rvitae, justo. Nullam dictum felis eu pede mollis pretium."
     image:
       altText: Alt image1
       image: /img/Image-2.png
