@@ -8,7 +8,7 @@ import mask from '../img/home-mask.svg'
 const Header = styled.div`
 display: grid;
 grid-template-columns: repeat(48, 1fr);
-grid-template-rows: 100px 1fr;
+grid-template-rows: 100px 1fr 61px;
 overflow-x: hidden;
 min-height: 630px;
 position: relative;
@@ -20,7 +20,7 @@ position: relative;
 `
 const ImageWrap = styled.div`
 grid-column: 1 / span 24;
-grid-row: 1 / span 2;
+grid-row: 1 / -1;
 width: 100%;
 height: 100%;
 max-height: 630px;
@@ -35,7 +35,7 @@ transform: translate3d(${props => props.active? `-${props.active * 100}%` : 0}, 
 `
 const Mask = styled.div`
 grid-column: 1 / -1;
-grid-row: 1 / span 2;
+grid-row: 1 / -1;
 width: 100%;
 height: 100%;
 z-index:0;
@@ -54,16 +54,25 @@ left: calc(50vw - 455px);
   grid-row: 3 / -1;
   left: initial;
 }
+@media (max-width: 390px) {
+  grid-column: 2 / -2;
+  margin: 0 -20px;
+  padding: 0 20px;
+}
+
 `
 const TextWrap = styled.div`
 grid-column: 25 / span 12;
-grid-row: 2;
+grid-row: 2 / -1;
 position: relative;
 align-self: center;
 @media (max-width: 991px) {
   grid-column: 3 / -3;
   grid-row: 3 / -1;
   padding: 50px 0;
+}
+@media (max-width: 390px) {
+  grid-column: 2 / -2;
 }
 display: grid;
 `
@@ -82,16 +91,21 @@ const Title = styled.div`
   font: 700 55px var(--SegoeUI);
   margin: 25px 0 40px;
   position: relative;
+  --barWidth: 50px;
 
   &:before {
     content: '';
     display: block;
-    width: 50px;
+    width: var(--barWidth);
     height: 5px;
     background-color: var(--gray);
     position: absolute;
     top: -25px;
-    left: ${props => props.right? `calc(100% - 50px)` : `0px`};
+    left: ${props => props.right? `calc(100% - var(--barWidth))` : `0px`};
+  }
+  @media (max-width: 534px) {
+    font-size: 40px;
+    --barWidth: 40px;
   }
 `
 const Bg = styled.div`
@@ -105,6 +119,33 @@ const Bg = styled.div`
   top: 0;
   left: ${props => props.index * 100}%;
 `
+const Buttons = styled.div`
+  grid-column: 1 / -1;
+  grid-row: 3;
+  align-self: start;
+  justify-self: center;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+
+  @media (max-width: 991px) {
+    grid-row: 6;
+    align-self: end;
+    margin-bottom: 10px;
+  }
+`
+const Button = styled.div`
+  cursor: pointer;
+  width: 7px;
+  height: 7px;
+  background-color: ${props => props.active? `#fff` : `var(--gray)`};
+  transform: scale3d(${props => props.active? 1.5714 : 1}, ${props => props.active? 1.5714 : 1}, 1);
+  border-radius: 50%;
+  transition: transform 0.35s, background-color 0.35s;
+  &:not(:last-of-type) {
+    margin-right: 11px;
+  }
+`
 
 export default ({ data }) => {
   const arrLength = data.carousel.length
@@ -117,9 +158,12 @@ export default ({ data }) => {
   //   ));
   // }, [arrLength])
 
-  const carousel = () => {
+  const carouselNext = () => {
     const newActive = active + 1
     setActive(newActive == arrLength? 0 : newActive)
+  }
+  const carouselIndex = (index) => {
+    setActive(index)
   }
 
   return (
@@ -139,8 +183,13 @@ export default ({ data }) => {
             <div dangerouslySetInnerHTML={{ __html: item.body }} />
           </Text>
         ))}
-        <button onClick={carousel} style={{cursor: 'pointer', zIndex:100}}>button</button>
       </TextWrap>
+      <Buttons>
+        {data.carousel.map((item, index) => (
+          <Button key={index} active={index == active} onClick={() => carouselIndex(index)} />
+        ))}
+      </Buttons>
+        {/* <button onClick={carouselNext} style={{cursor: 'pointer', zIndex:100}}>button</button> */}
     </Header>
   )
 }
