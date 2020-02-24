@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { useStaticQuery, graphql } from "gatsby"
 // import { useForm, Controller } from 'react-hook-form'
 // import { Input, Select, Button } from 'antd'
 // import 'antd/es/input/style/css'
@@ -11,7 +12,6 @@ import TextField from '@material-ui/core/TextField'
 import Select from '@material-ui/core/Select'
 import MenuItem from '@material-ui/core/MenuItem'
 import styled from 'styled-components'
-import color from '@material-ui/core/colors/amber'
 
 // const { Option } = Select 
 
@@ -87,6 +87,20 @@ const ContactWrap = styled.div`
   grid-template-columns: repeat(4, 1fr);
 `
 export default () => {
+  const data = useStaticQuery(graphql`
+    query ContactQuery {
+      settings: markdownRemark(frontmatter: {templateKey: {eq: "settings-page"}}) {
+        frontmatter {
+          interests: contactInterests {
+            interest
+          }
+        }
+      }
+    }
+  `)
+
+  const { settings: { frontmatter: { interests }}} = data
+
   // const { register, handleSubmit, control, setValue } = useForm()
   const onSubmit = data => console.log(data)
   const classes = useStyles()
@@ -118,9 +132,9 @@ export default () => {
             onChange={handleChange}
           >
             <MenuItem value="" disabled>Interested In</MenuItem>
-            <MenuItem value="1">1</MenuItem>
-            <MenuItem value="2">2</MenuItem>
-            <MenuItem value="3">3</MenuItem>
+            {interests.map(({ interest }) => (
+              <MenuItem value={interest}>{interest}</MenuItem>
+            ))}
           </Select>
         </FormControl>
         <FormControl id="message">
