@@ -1,12 +1,34 @@
 import React, { useState } from 'react'
-import { useForm, Controller } from 'react-hook-form'
-import { Input, Select, Button } from 'antd'
+// import { useForm, Controller } from 'react-hook-form'
+// import { Input, Select, Button } from 'antd'
 // import 'antd/es/input/style/css'
 // import 'antd/es/select/style/css'
-import 'antd/dist/antd.css'
+// import 'antd/dist/antd.css'
+import { makeStyles } from '@material-ui/core/styles'
+import FormControl from '@material-ui/core/FormControl'
+import Button from '@material-ui/core/Button'
+import TextField from '@material-ui/core/TextField'
+import Select from '@material-ui/core/Select'
+import MenuItem from '@material-ui/core/MenuItem'
 import styled from 'styled-components'
+import color from '@material-ui/core/colors/amber'
 
-const { Option } = Select 
+// const { Option } = Select 
+
+const useStyles = makeStyles(theme => ({
+  button: {
+    textTransform: 'initial',
+    paddingRight: '50px',
+    paddingLeft: '50px',
+    border: '1px solid var(--gray)',
+    borderRadius: '50px',
+    color: 'var(--blue)'
+  },
+  formControl: {
+    margin: theme.spacing(1),
+    minWidth: 120,
+  },
+}))
 
 const Contact = styled.div``
 const Title = styled.h3`
@@ -54,13 +76,41 @@ const Form = styled.form`
 `
 
 export default () => {
-  const { register, handleSubmit, control, setValue } = useForm()
+  // const { register, handleSubmit, control, setValue } = useForm()
   const onSubmit = data => console.log(data)
+  const classes = useStyles()
 
   return (
     <Contact>
       <Title>Contact Us</Title>
-      <Form onSubmit={handleSubmit(onSubmit)}>
+      <Form onSubmit={onSubmit}>
+        <FormControl id="firstName">
+          <TextField default="" name="firstName" placeholder="First Name" />
+        </FormControl> 
+        <FormControl id="lastName">
+          <TextField default="" name="lastName" placeholder="Last Name" />
+        </FormControl>
+        <FormControl id="email">
+          <TextField default="" name="email" placeholder="E-mail" />
+        </FormControl>
+        <FormControl id="interest">
+          <Select
+            mode="multiple"
+            placeholder="Interested In"
+          >
+            <MenuItem value="1">1</MenuItem>
+            <MenuItem value="2">2</MenuItem>
+            <MenuItem value="3">3</MenuItem>
+          </Select>
+        </FormControl>
+        <FormControl id="message">
+          <TextField default="" name="message" placeholder="Message" />
+        </FormControl>
+
+        <Button className={classes.button} id="send" shape="round" onClick={onSubmit}>Send</Button>
+
+      </Form>
+      {/* <Form onSubmit={handleSubmit(onSubmit)}>
         <Controller id="firstName" as={<Input />} control={control} default="" name="firstName" placeholder="First Name" />
         <Controller id="lastName" as={<Input />} control={control} default="" name="lastName" placeholder="Last Name" />
         <Controller id="email" as={<Input />} control={control} default="" name="email" placeholder="E-mail" />
@@ -81,7 +131,7 @@ export default () => {
 
         <Button id="send" shape="round" onClick={handleSubmit(onSubmit)}>Send</Button>
 
-      </Form>
+      </Form> */}
     </Contact>
   )
 }
