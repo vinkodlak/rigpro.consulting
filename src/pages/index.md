@@ -1,6 +1,6 @@
 ---
 templateKey: index-page
-title: RIGPRO Consulting
+title: RIGPRO Consulting test
 metaDescription: Home page meta description
 mainPitch:
   carousel:
