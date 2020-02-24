@@ -24,9 +24,8 @@ const useStyles = makeStyles(theme => ({
     borderRadius: '50px',
     color: 'var(--blue)'
   },
-  formControl: {
-    margin: theme.spacing(1),
-    minWidth: 120,
+  selectEmpty: {
+    marginTop: theme.spacing(2),
   },
 }))
 
@@ -91,6 +90,11 @@ export default () => {
   // const { register, handleSubmit, control, setValue } = useForm()
   const onSubmit = data => console.log(data)
   const classes = useStyles()
+  const [age, setAge] = React.useState('');
+
+  const handleChange = event => {
+    setAge(event.target.value)
+  }
 
   return (
     <ContactWrap>
@@ -109,8 +113,11 @@ export default () => {
         <FormControl id="interest">
           <Select
             mode="multiple"
-            placeholder="Interested In"
+            displayEmpty 
+            value={age}
+            onChange={handleChange}
           >
+            <MenuItem value="" disabled>Interested In</MenuItem>
             <MenuItem value="1">1</MenuItem>
             <MenuItem value="2">2</MenuItem>
             <MenuItem value="3">3</MenuItem>

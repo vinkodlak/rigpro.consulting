@@ -80,16 +80,18 @@ exports.createPages = ({ actions, graphql }) => {
 
     posts.forEach(edge => {
       const id = edge.node.id
-      createPage({
-        path: edge.node.fields.slug,
-        component: path.resolve(
-          `src/templates/${String(edge.node.frontmatter.templateKey)}.js`
-        ),
-        // additional data can be passed via context
-        context: {
-          id,
-        },
-      })
+      if (edge.node.frontmatter.templateKey != 'settings-page') {
+        createPage({
+          path: edge.node.fields.slug,
+          component: path.resolve(
+            `src/templates/${String(edge.node.frontmatter.templateKey)}.js`
+          ),
+          // additional data can be passed via context
+          context: {
+            id,
+          },
+        })
+      }
     })
 
     // Tag pages:
@@ -124,15 +126,11 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 
   if (node.internal.type === `MarkdownRemark`) {
     const value = createFilePath({ node, getNode })
-    
-    if (node.frontmatter.templateKey != 'settings-page') {
-      createNodeField({
-        name: `slug`,
-        node,
-        value,
-      })
-
-    }
+    createNodeField({
+      name: `slug`,
+      node,
+      value,
+    })
 
     // if (node.frontmatter.templateKey == 'about-page') {
     //   const body = node.frontmatter.section1.body
