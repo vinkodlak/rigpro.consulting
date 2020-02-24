@@ -7,13 +7,13 @@ import Layout from '../components/Layout'
 import Header from '../components/Header'
 import Container from '../components/Container'
 import GlobalFull from '../components/Full'
+import Contact from '../components/Contact'
 
 import World from '../img/world.inline.svg'
 
 const Full = styled(GlobalFull)`
   background-color: var(--lightgray);
   padding: 50px 0;
-  margin-bottom: 100px;
 `
 const Title = styled.h2`
   font: 700 55px var(--SegoeUI);
@@ -140,7 +140,7 @@ export const AboutPageTemplate = ({ section1, section2, section3 }) => (
       </Section1>
     </Container>
 
-    <Full>
+    <Full mb="100">
       <Container>
         <Section2>
           <Map countries={section2.countries}>
@@ -170,6 +170,12 @@ export const AboutPageTemplate = ({ section1, section2, section3 }) => (
         </CompanyImage>
       </Section3>
     </Container>
+
+    <Full>
+      <Container>
+        <Contact />
+      </Container>
+    </Full>
   </>
 )
 

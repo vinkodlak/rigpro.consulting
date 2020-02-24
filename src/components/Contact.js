@@ -30,7 +30,16 @@ const useStyles = makeStyles(theme => ({
   },
 }))
 
-const Contact = styled.div``
+const Contact = styled.div`
+  grid-column: 1 / span 2;
+
+  @media (max-width: 991px) {
+    grid-column: 1 / span 3;
+  }
+  @media (max-width: 650px) {
+    grid-column: 1 / -1;
+  }
+`
 const Title = styled.h3`
   font: 700 55px var(--SegoeUI);
   margin: 26px 0 40px;
@@ -74,14 +83,18 @@ const Form = styled.form`
     justify-self: end;
   }
 `
-
+const ContactWrap = styled.div`
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+`
 export default () => {
   // const { register, handleSubmit, control, setValue } = useForm()
   const onSubmit = data => console.log(data)
   const classes = useStyles()
 
   return (
-    <Contact>
+    <ContactWrap>
+      <Contact>
       <Title>Contact Us</Title>
       <Form onSubmit={onSubmit}>
         <FormControl id="firstName">
@@ -133,5 +146,6 @@ export default () => {
 
       </Form> */}
     </Contact>
+    </ContactWrap>
   )
 }

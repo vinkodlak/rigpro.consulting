@@ -389,3 +389,13 @@ collections:
                 },
               ]
             }
+      - file: "src/pages/settings/index.md"
+        label: Settings
+        name: settings
+        fields:
+          - { label: "Template Key", name: templateKey, widget: hidden, default: settings-page }
+          - { label: Contact - interests, name: contactInterests, widget: list,
+              fields: [
+                { label: "Interest", name: interest, widget: string },
+              ]
+            }

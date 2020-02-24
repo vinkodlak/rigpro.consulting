@@ -97,10 +97,6 @@ const Pitch = styled.section`
     }
   }
 `
-const HalfContainer = styled(Container)`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-`
 
 export const IndexPageTemplate = ({ data }) => {
 
@@ -139,14 +135,14 @@ export const IndexPageTemplate = ({ data }) => {
         }
       })}
       {((data.frontmatter.pitches.length % 2 !== 0) && (
-        <HalfContainer mt="50" mb="50">
+        <Container mt="50" mb="50">
           <Contact />
-        </HalfContainer>
+        </Container>
       )) || (
         <Full mt="50">
-          <HalfContainer>
+          <Container>
             <Contact />
-          </HalfContainer>
+          </Container>
         </Full>
       )}
     </>

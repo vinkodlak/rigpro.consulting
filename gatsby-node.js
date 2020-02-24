@@ -124,11 +124,15 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 
   if (node.internal.type === `MarkdownRemark`) {
     const value = createFilePath({ node, getNode })
-    createNodeField({
-      name: `slug`,
-      node,
-      value,
-    })
+    
+    if (node.frontmatter.templateKey != 'settings-page') {
+      createNodeField({
+        name: `slug`,
+        node,
+        value,
+      })
+
+    }
 
     // if (node.frontmatter.templateKey == 'about-page') {
     //   const body = node.frontmatter.section1.body
