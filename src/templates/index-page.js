@@ -8,6 +8,7 @@ import GlobalFull from '../components/Full'
 import Container from '../components/Container'
 import logoBlue from '../img/logo-blue.svg'
 import styled from 'styled-components'
+import Contact from '../components/Contact'
 
 const H1Img = styled.h1`
   margin: 0 0 50px;
@@ -26,31 +27,74 @@ const Full = styled(GlobalFull)`
   padding: 50px 0;
   background-color: var(--lightgray);
 `
-const Title = styled.h3`
-`
 const Text = styled.div`
+  text-align: ${props => props.right? `right` : `inherit`};
+`
+const Title = styled.h3`
+  font: 700 55px var(--SegoeUI);
+  margin: 26px 0 40px;
+  position: relative;
+  text-align: ${props => props.right? `right` : `inherit`};
+
+  &:before {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 5px;
+    background-color: var(--gray);
+    position: absolute;
+    top: -25px;
+    left: ${props => props.right? `calc(100% - 50px)` : `0px`};
+  }
 `
 const Image = styled.div`
+align-self: center;
 `
 const Pitch = styled.section`
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 1fr auto;
+  grid-template-rows: 1fr auto auto 1fr;
   grid-gap: 0 var(--gridGapHoriz);
 
   ${Title} {
     grid-column: ${props => props.index % 2 === 0 ? 1 : 5} / span 8;
-    grid-row: 1;
+    grid-row: 2;
   }
 
   ${Text} {
     grid-column: ${props => props.index % 2 === 0 ? 1 : 5} / span 8;
-    grid-row: 2;
+    grid-row: 3;
   }
 
   ${Image} {
     grid-column: ${props => props.index % 2 === 0 ? 9 : 1} / span 4;
-    grid-row: 1 / span 2;
+    grid-row: 1 / -1;
+  }
+
+  @media (max-width: 991px) {
+    grid-template-rows: repeat(3, auto);
+
+    ${Title},
+    ${Text} {
+      grid-column: 1 / -1;
+    }
+    ${Title} {
+      grid-row: 1;
+      text-align: center;
+
+      &:before {
+        left: calc(50% - 25px);
+      }
+    }
+    ${Image} {
+      grid-column: 3 / -3;
+      grid-row: 2;
+    }
+    ${Text} {
+      grid-row: 3;
+      margin-top: 25px;
+      text-align: left;
+    }
   }
 
 `
@@ -68,14 +112,14 @@ export const IndexPageTemplate = ({ data }) => {
       {data.frontmatter.pitches.map((pitch, index) => {
         const MakePitch = () => (
           <Pitch index={index}>
-            <Title>{pitch.title}</Title>
-            <Text dangerouslySetInnerHTML={{ __html: pitch.body }} />
+            <Title right={index % 2 !== 0}>{pitch.title}</Title>
+            <Text right={index % 2 !== 0} dangerouslySetInnerHTML={{ __html: pitch.body }} />
             <Image>
               <Img fluid={pitch.image.image.childImageSharp.fluid} />
             </Image>
           </Pitch>
         )
-        if (index % 2 === 0) {
+        if (index % 2 !== 0) {
           return (
             <Container mt="50" key={index}>
               <MakePitch />
@@ -91,14 +135,14 @@ export const IndexPageTemplate = ({ data }) => {
           )
         }
       })}
-      {((data.frontmatter.pitches.length % 2 === 0) && (
+      {((data.frontmatter.pitches.length % 2 !== 0) && (
         <Container mt="50" mb="50">
-          0
+          <Contact />
         </Container>
       )) || (
         <Full mt="50">
           <Container>
-            1
+            <Contact />
           </Container>
         </Full>
       )}
