@@ -1,11 +1,11 @@
 ---
 templateKey: index-page
-title: RIGPRO Consulting test
+title: RIGPRO Consulting
 metaDescription: Home page meta description
 mainPitch:
   carousel:
     - image: /img/consulting_2.jpg
-      title: Consulting
+      title: Consulting test
       body: >-
         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
         ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis
