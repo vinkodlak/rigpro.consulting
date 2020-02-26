@@ -66,20 +66,19 @@ section2:
         ### Conveyance
 
         * Wireline
-
         * Slickline
-
         * Pipe-conveyed
-
         * Cable Seasoning
-
         * Logging While Fishing
+        * ...
     - body: |-
-        ### Lorem Ipsum
+        ### Facilities
 
-        * One
-        * Two
-        * Three
+        * Drilling and Workover Land Rigs
+        * Semi-Submersibles
+        * Drill Ships
+        * Drilling Pads
+        * Jackups
     - body: |-
         ### Lorem Ipsum
 
