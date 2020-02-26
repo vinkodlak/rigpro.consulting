@@ -11,6 +11,12 @@ mainPitch:
         project. Our holistic approach ensures time and money are saved in each
         step of the operation and, at the same time, safety awareness is
         increased in a continuous improvement cycle.
+    - image: /img/work_on_2.jpg
+      title: Wellsite Witnessing
+      body: >-
+        All our consultants are ex-wireline engineers. On our witnessing jobs,
+        we blend with the logging crew and provide a 24/7 supervision, quality
+        control and reporting services to our clients.
     - image: /img/education_2.jpg
       title: Logging Courses
       body: >-
@@ -18,12 +24,6 @@ mainPitch:
         audiences. From Petrophysicists to Drilling Supervisors - our targeted
         QA/QC courses are tailored to minimize time and maximize benefit. Both
         online and class-based courses are available.
-    - image: /img/work_on_2.jpg
-      title: Wellsite Witnessing
-      body: >-
-        All our consultants are ex-wireline engineers. On our witnessing jobs,
-        we blend with the logging crew and provide a 24/7 supervision, quality
-        control and reporting services to our clients.
 pitches:
   - title: How Do We Operate?
     body: >-
