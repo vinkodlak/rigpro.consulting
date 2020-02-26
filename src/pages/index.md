@@ -57,4 +57,4 @@ pitches:
     videoLink:
       newTab: false
 ---
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+A unique blend of cutting-edge software and a vast field experience positions us at the top of the list of Wireline QA/QC providers. Contact us today to find out more.
