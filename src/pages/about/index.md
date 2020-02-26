@@ -3,16 +3,13 @@ templateKey: about-page
 title: About
 section1:
   body: >-
-    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
-    ligula eget dolor. Aenean massa. Cum  sociis natoque penatibus et magnis dis
-    parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, 
-    
-    pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. 
+    We are knowledgeable, focused and passionate about what we do. Despite many
+    years of field exposure, we're still in love with the field work and all ups
+    and downs it offers.
 
 
-    Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim
-    justo, rhoncus ut, imperdiet a, venenatis  vitae, justo. Nullam dictum felis
-    eu pede mollis pretium.
+    If you do grant us your trust, we'll prove to you we are the best Wireline
+    QC team, globally.
   title: Our Experts
 section2:
   body: >-
