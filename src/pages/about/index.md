@@ -69,7 +69,8 @@ section2:
         * Slickline
         * Pipe-conveyed
         * Cable Seasoning
-        * Logging While Fishing
+        * Fishing and Logging While Fishing
+        * ROV-Guided Logging
         * ...
     - body: |-
         ### Facilities
@@ -80,11 +81,12 @@ section2:
         * Drilling Pads
         * Jackups
     - body: |-
-        ### Lorem Ipsum
+        ### Environments
 
-        * One
-        * Two
-        * Three
+        * Deserts
+        * Subarctic
+        * Shallow, Deep and Ultra-Deep Water
+        * 
     - body: |-
         ### Lorem Ipsum
 
