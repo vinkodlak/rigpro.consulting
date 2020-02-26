@@ -42,13 +42,26 @@ pitches:
       newTab: false
       text: ''
       url: ''
-  - title: Lorem Ipsum
-    body: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum \rsociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, \r\npellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. \r\n\r\nDonec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis \rvitae, justo. Nullam dictum felis eu pede mollis pretium."
+  - title: RIGPRO Software
+    body: >-
+      RIGPRO Wireline QC software is world's first software platform to aid in a
+      quality control of a wireline logging operation.
+
+      RIGPRO software comes as desktop and mobile application. It is installed
+      on devices of all the stakeholders in a logging operation - Logging
+      Witness, Operations Geologist, Drilling Supervisor, Wellsite Geologist...
+
+      Instead of spreadsheets and word documents, information is entered into
+      the RIGPRO desktop application. Users are able to monitor the operation in
+      real time, produce various reports and time breakdowns, create pressure
+      charts and gradients and much more.
     image:
       altText: 'A,lt image 2'
       image: /img/Image-3.png
     link:
       newTab: false
+      text: Click here to learn about RIGPRO software
+      url: 'https://consulting.vinko.me/software/'
     videoLink:
       newTab: false
   - title: Lorem Ipsum
