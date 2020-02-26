@@ -69,7 +69,7 @@ section2:
         * Slickline
         * Pipe-conveyed
         * Cable Seasoning
-        * Fishing and Logging While Fishing
+        * Fishing / Logging While Fishing
         * ROV-Guided Logging
         * ...
     - body: |-
@@ -83,6 +83,7 @@ section2:
     - body: |-
         ### Environments
 
+        * Standard Land Operations
         * Deserts
         * Subarctic
         * Shallow, Deep and Ultra-Deep Water
