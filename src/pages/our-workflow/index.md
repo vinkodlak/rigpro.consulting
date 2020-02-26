@@ -1,6 +1,6 @@
 ---
 templateKey: our-workflow-page
-title: Our workflow
+title: Workflow
 workflows:
   - body: >-
       At the beginning of the project we get to know each other. Contact details
