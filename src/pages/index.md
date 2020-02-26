@@ -5,13 +5,12 @@ metaDescription: Home page meta description
 mainPitch:
   carousel:
     - image: /img/consulting_2.jpg
-      title: Consulting
+      title: Wireline Consulting
       body: >-
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
-        ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis
-        dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-        ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
-        quis enim.
+        We bring functional expertise to the table, on any wireline logging
+        project. Our holistic approach ensures time and money are saved in each
+        step of the operation and, at the same time, safety awareness is
+        increased in a continuous improvement cycle.
     - image: /img/education_2.jpg
       title: Education
       body: >-
