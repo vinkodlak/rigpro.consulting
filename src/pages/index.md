@@ -25,14 +25,18 @@ mainPitch:
         we blend with the logging crew and provide a 24/7 supervision, quality
         control and reporting services to our clients.
 pitches:
-  - title: Lorem ipsum
-    body: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum \rsociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, \r\npellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. \r\n\r\nDonec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis \rvitae, justo. Nullam dictum felis eu pede mollis pretium."
+  - title: How Do We Operate?
+    body: >-
+      Regardless of whether we are a part of the highest-profile exploration
+      operation in the world, or involved in the most basic logging job in a
+      mature field, we'll give out 100%, we will improve safety and efficiency
+      and eventually save the money - that is our promise to our clients.
     image:
       altText: Alt image1
       image: /img/Image-2.png
     link:
       newTab: false
-      text: ''
+      text: Click here to learn about our workflow
       url: ''
     videoLink:
       newTab: false
