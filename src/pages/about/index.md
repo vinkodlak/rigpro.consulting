@@ -80,6 +80,7 @@ section2:
         * Drill Ships
         * Drilling Pads
         * Jackups
+        * ...
     - body: |-
         ### Environments
 
@@ -88,6 +89,7 @@ section2:
         * Subarctic
         * Shallow, Deep and Ultra-Deep Water
         * HTHP Wells
+        * ...
     - body: |-
         ### Skills and Competencies
 
@@ -99,6 +101,7 @@ section2:
         * Radiation
         * Explosives
         * Emergency Planning - Response and Evacuation
+        * ...
   title: Our Experience
 section3:
   body: >-
