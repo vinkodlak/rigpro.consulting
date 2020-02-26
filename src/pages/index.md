@@ -57,4 +57,4 @@ pitches:
     videoLink:
       newTab: false
 ---
-A unique blend of cutting-edge software and a vast field experience positions us at the top of the list of Wireline QA/QC providers. Contact us today to find out more.
+**A unique blend of cutting-edge software and a vast field experience positions us at the top of the list of Wireline QA/QC providers. Contact us today to find out more.**
