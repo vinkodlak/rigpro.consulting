@@ -13,15 +13,15 @@ section1:
   title: Our Experts
 section2:
   body: >-
-    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
-    ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
-    parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
-    pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. 
+    From deserts to subarctic. Trucks, land operations, jack-ups, drilling
+    ships, semi-submersible rigs....you name it, we've been there. We've been
+    involved in well-established operations, and we also ran remote projects
+    with only a fistful of people.
 
 
-    Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim
-    justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis
-    eu pede mollis pretium.
+    Our particular stronghold are highly demanding operations with limited
+    support, one-off projects requiring extensive planning for a seamless
+    execution. That's where we shine.
   countries:
     - RU
     - KE
