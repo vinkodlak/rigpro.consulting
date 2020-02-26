@@ -44,8 +44,8 @@ pitches:
       url: ''
   - title: RIGPRO Software
     body: >-
-      RIGPRO Wireline QC software is world's first software platform to aid in a
-      quality control of a wireline logging operation.
+      RIGPRO Wireline QC software is world's first software platform to assist
+      the quality control of a wireline logging operation.
 
       RIGPRO software comes as desktop and mobile application. It is installed
       on devices of all the stakeholders in a logging operation - Logging
