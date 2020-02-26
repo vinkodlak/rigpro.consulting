@@ -12,13 +12,12 @@ mainPitch:
         step of the operation and, at the same time, safety awareness is
         increased in a continuous improvement cycle.
     - image: /img/education_2.jpg
-      title: Education
+      title: Wireline Logging Courses
       body: >-
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
-        ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis
-        dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-        ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
-        quis enim.
+        We offer practical wireline logging education to a wide range of
+        audiences. From Petrophysicists to Drilling Supervisors - our targeted
+        courses are tailored to minimize time and maximize benefit. Both online
+        and class-based courses are available.
     - image: /img/work_on_2.jpg
       title: Work On
       body: >-
