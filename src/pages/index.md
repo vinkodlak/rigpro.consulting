@@ -16,8 +16,8 @@ mainPitch:
       body: >-
         We offer practical wireline logging education to a wide range of
         audiences. From Petrophysicists to Drilling Supervisors - our targeted
-        courses are tailored to minimize time and maximize benefit. Both online
-        and class-based courses are available.
+        QA/QC courses are tailored to minimize time and maximize benefit. Both
+        online and class-based courses are available.
     - image: /img/work_on_2.jpg
       title: Work On
       body: >-
