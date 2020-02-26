@@ -87,13 +87,18 @@ section2:
         * Deserts
         * Subarctic
         * Shallow, Deep and Ultra-Deep Water
-        * 
+        * HTHP Wells
     - body: |-
-        ### Lorem Ipsum
+        ### Skills and Competencies
 
-        * One
-        * Two
-        * Three
+        * Reservoir Characterization Suite
+        * Logistics
+        * Seismic/Vibroseis
+        * Marine Mammal Observation - UK and GOM
+        * In-Depth HSE Knowledge Base
+        * Radiation
+        * Explosives
+        * Emergency Planning - Response and Evacuation
   title: Our Experience
 section3:
   body: >-
