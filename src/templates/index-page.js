@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 import Img from 'gatsby-image'
 import Layout from '../components/Layout'
 import HeaderHome from '../components/HeaderHome'
@@ -26,6 +26,18 @@ const LogoText = styled.div`
 const Full = styled(GlobalFull)`
   padding: 50px 0;
   background-color: var(--lightgray);
+`
+
+const Button = styled(Link)`
+  display: block;
+  width: auto;
+  text-transform: initial;
+  padding: 8px 50px;
+  border: 1px solid var(--gray);
+  border-radius: 50px;
+  color: var(--blue);
+  margin-top: 1em;
+  font-size: 18px;
 `
 const Text = styled.div`
   text-align: ${props => props.right? `right` : `inherit`};
@@ -53,7 +65,7 @@ align-self: center;
 const Pitch = styled.section`
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 1fr auto auto 1fr;
+  grid-template-rows: 1fr auto auto auto 1fr;
   grid-gap: 0 var(--gridGapHoriz);
 
   ${Title} {
@@ -66,16 +78,23 @@ const Pitch = styled.section`
     grid-row: 3;
   }
 
+  ${Button} {
+    justify-self: ${props => props.index % 2 === 0 ? 'start' : 'end'};
+    grid-column: ${props => props.index % 2 === 0 ? 1 : 5} / span 8;
+    grid-row: 4;
+  }
+
   ${Image} {
     grid-column: ${props => props.index % 2 === 0 ? 9 : 1} / span 4;
     grid-row: 1 / -1;
   }
 
   @media (max-width: 991px) {
-    grid-template-rows: repeat(3, auto);
+    grid-template-rows: repeat(4, auto);
 
     ${Title},
-    ${Text} {
+    ${Text},
+    ${Button} {
       grid-column: 1 / -1;
     }
     ${Title} {
@@ -95,6 +114,9 @@ const Pitch = styled.section`
       margin-top: 25px;
       text-align: left;
     }
+    ${Button} {
+      grid-row: 4;
+    }
   }
 `
 
@@ -113,6 +135,9 @@ export const IndexPageTemplate = ({ data }) => {
           <Pitch index={index}>
             <Title right={index % 2 !== 0}>{pitch.title}</Title>
             <Text right={index % 2 !== 0} dangerouslySetInnerHTML={{ __html: pitch.body }} />
+            {pitch.link.url && (
+              <Button to={pitch.link.url} right={index % 2 !== 0}>{pitch.link.text}</Button>
+            )}
             <Image>
               <Img fluid={pitch.image.image.childImageSharp.fluid} />
             </Image>

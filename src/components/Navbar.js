@@ -162,12 +162,12 @@ export default () => {
         </Logo>
         <Ul className={isActive && `is-active`}>
           <li><Link to={`/`} activeClassName="active">Home</Link></li>
-          <li><Link to={`/our-workflow/`} activeClassName="active">Our workflow</Link></li>
+          <li><Link to={`/workflow/`} activeClassName="active">Workflow</Link></li>
           <li><Link to={`/software/`} activeClassName="active">Software</Link></li>
           <li><Link to={`/courses/`} activeClassName="active">Courses</Link></li>
           <li><Link to={`/blog/`} activeClassName="active">Blog</Link></li>
           <li><Link to={`/about/`} activeClassName="active">About</Link></li>
-          <li><Login to={`/login/`}>Log In</Login></li>
+          {/* <li><Login to={`/login/`}>Log In</Login></li> */}
         </Ul>
         <Burger>
           <HamburgerSlider className="menu-burger" barColor="#fff" isActive={isActive} toggleButton={toggleActive} />

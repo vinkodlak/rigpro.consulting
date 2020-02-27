@@ -37,7 +37,7 @@ pitches:
     link:
       newTab: false
       text: Click here to learn about our workflow
-      url: 'https://consulting.vinko.me/our-workflow/'
+      url: 'https://consulting.vinko.me/workflow/'
     videoLink:
       newTab: false
       text: ''
