@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import logo from '../img/logo.svg'
 import GlobalContainer from '../components/Container'
 import { HamburgerSlider } from 'react-animated-burgers'
-import bg from '../img/bg-1.png'
+import bg from '../img/footer-design.svg'
 
 
 const Container = styled(GlobalContainer)`
@@ -53,6 +53,7 @@ const Ul = styled.ul`
     flex-direction: column;
     background-image: url(${bg});
     background-size: cover;
+    background-position: right center;
     background-repeat: no-repeat;
     margin: 0;
     z-index: 10;

@@ -1,11 +1,14 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import bg from '../img/bg-1.png'
+import bg from '../img/footer-design.svg'
 
 const Header = styled.header`
 height: 300px;
 background-image: url(${bg});
+background-size: cover;
+background-position: left center;
+background-repeat: no-repeat;
 display: grid;
 
 h1 {

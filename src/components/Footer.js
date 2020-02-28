@@ -7,7 +7,7 @@ import logo from '../img/logo.svg'
 import facebook from '../img/social/facebook.svg'
 import linkedin from '../img/social/linkedin.svg'
 import twitter from '../img/social/twitter.svg'
-import bg from '../img/bg-1.png'
+import bg from '../img/footer-design.svg'
 
 const Footer = styled.footer`
   height: 300px;
@@ -16,6 +16,9 @@ const Footer = styled.footer`
   grid-template-columns: var(--mainGrid);
   grid-gap: var(--gridGap);
   align-items: center;
+  background-size: cover;
+  background-position: left center;
+  background-repeat: no-repeat;
 `
 const Container = styled(GlobalContainer)`
   display: grid;

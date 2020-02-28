@@ -89,7 +89,8 @@ const Map = styled.div`
 const Experience = styled.article`
   grid-row: 3;
   @media (max-width: 991px) {
-    grid-row: 4;
+    grid-row: ${props => props.index < 2 ? 4 : 5};
+    grid-column: ${props => (props.index % 2 + 1) * 2 - 1} / span 2;
   }
 
 `
@@ -151,7 +152,7 @@ export const AboutPageTemplate = ({ section1, section2, section3 }) => (
           <Text dangerouslySetInnerHTML={{ __html: section2.body }} />
           {/* </ExperienceInfo> */}
           {section2.experiences.map((exp, index) => (
-            <Experience key={index} dangerouslySetInnerHTML={{ __html: exp.body }} />
+            <Experience key={index} index={index} dangerouslySetInnerHTML={{ __html: exp.body }} />
           ))}
         </Section2>
       </Container>
