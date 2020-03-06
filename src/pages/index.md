@@ -1,6 +1,6 @@
 ---
 templateKey: index-page
-title: RIGPRO Consulting
+title: 'RIGPRO Consulting Services '
 metaDescription: Home page meta description
 mainPitch:
   carousel:
@@ -16,7 +16,9 @@ mainPitch:
       body: >-
         All our consultants are ex-wireline engineers. On our witnessing jobs,
         we blend with the logging crew and provide a 24/7 supervision, quality
-        control and reporting services to our clients.
+        control and reporting services to our clients. It is our ultimate goal
+        to to work safely with the logging crews to provide the client with high
+        quality data, on depth, with 100 percent operational efficiency.
     - image: /img/education_2.jpg
       title: Logging Courses
       body: >-
@@ -28,8 +30,8 @@ pitches:
   - title: How Do We Operate?
     body: >-
       Regardless of whether we are a part of the highest-profile exploration
-      operation in the world, or involved in the most basic logging job in a
-      mature field, we'll give out 100%, we will improve safety and efficiency
+      operation in the world, or involved in the most basic logging operation in
+      a mature field, we'll give out 100%, we will improve safety and efficiency
       and eventually save the money - that is our promise to our clients.
     image:
       altText: Alt image1
@@ -74,4 +76,4 @@ pitches:
     videoLink:
       newTab: false
 ---
-**Unique blend of cutting-edge software and a vast field experience positions us at the top of the list of Wireline QA/QC providers. Contact us today to find out more.**
+**Unique blend of cutting-edge software coupled with vast field experience positions us at the top of the list of Wireline QA/QC providers. Contact us today to find out more.**
