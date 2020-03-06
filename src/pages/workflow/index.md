@@ -1,5 +1,5 @@
 ---
-templateKey: our-workflow-page
+templateKey: workflow-page
 title: Workflow
 workflows:
   - body: >-

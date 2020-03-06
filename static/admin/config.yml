@@ -92,11 +92,11 @@ collections:
                 }
               ]
             }
-      - file: "src/pages/our-workflow/index.md"
-        label: "Our Workflow"
-        name: our-workflow
+      - file: "src/pages/workflow/index.md"
+        label: "Workflow"
+        name: workflow
         fields:
-          - { label: "Template Key", name: templateKey, widget: hidden, default: our-workflow-page }
+          - { label: "Template Key", name: templateKey, widget: hidden, default: workflow-page }
           - { label: Title, name: title, widget: string }
           - { label: Workflow Items, name: workflows, widget: list,
               fields: [
