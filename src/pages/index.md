@@ -39,7 +39,7 @@ pitches:
     link:
       newTab: false
       text: Click here to learn about our workflow
-      url: 'https://consulting.vinko.me/workflow/'
+      url: '/workflow/'
     videoLink:
       newTab: false
       text: ''
@@ -63,7 +63,7 @@ pitches:
     link:
       newTab: false
       text: Click here to learn about RIGPRO software
-      url: 'https://consulting.vinko.me/software/'
+      url: '/software/'
     videoLink:
       newTab: false
   - title: Lorem Ipsum
