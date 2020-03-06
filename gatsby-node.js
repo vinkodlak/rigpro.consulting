@@ -80,7 +80,7 @@ exports.createPages = ({ actions, graphql }) => {
 
     posts.forEach(edge => {
       const id = edge.node.id
-      if (edge.node.frontmatter.templateKey != 'settings-page') {
+      if (!['settings-page', 'author', 'blog-post'].includes(edge.node.frontmatter.templateKey)) {
         createPage({
           path: edge.node.fields.slug,
           component: path.resolve(

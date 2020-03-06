@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { OurWorkflowPageTemplate } from '../../templates/our-workflow-page'
+import { OurWorkflowPageTemplate } from '../../templates/workflow-page'
 
 const OurWorkflowPagePreview = ({ entry, widgetsFor }) => {
   const widgets = widgetsFor('workflows').map(workflow => {
