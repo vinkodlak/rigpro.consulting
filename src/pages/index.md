@@ -28,8 +28,8 @@ pitches:
   - title: How Do We Operate?
     body: >-
       Regardless of whether we are a part of the highest-profile exploration
-      operation in the world, or involved in the most basic logging job in a
-      mature field, we'll give out 100%, we will improve safety and efficiency
+      operation in the world, or involved in the most basic logging operation in
+      a mature field, we'll give out 100%, we will improve safety and efficiency
       and eventually save the money - that is our promise to our clients.
     image:
       altText: Alt image1
