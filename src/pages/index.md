@@ -16,7 +16,9 @@ mainPitch:
       body: >-
         All our consultants are ex-wireline engineers. On our witnessing jobs,
         we blend with the logging crew and provide a 24/7 supervision, quality
-        control and reporting services to our clients.
+        control and reporting services to our clients. It is our ultimate goal
+        to to work safely with the logging crews to provide the client with high
+        quality data, on depth, with 100 percent operational efficiency.
     - image: /img/education_2.jpg
       title: Logging Courses
       body: >-
