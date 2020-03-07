@@ -79,14 +79,14 @@ collections:
                 { label: "Link", name: link, widget: object, required: false,
                   fields: [
                     { label: "Link Text", name: text, widget: string, required: false },
-                    { label: "Link URL", name: url, widget: string, required: false },
+                    { label: "Link URL", name: url, widget: string, required: false, hint: " Use /local/url/ or https://other.domain.com/url" },
                     { label: "Open in new tab?", name: newTab,widget: boolean, default: false, required: false }
                   ]
                 },
                 { label: "Video Link", name: videoLink, widget: object, required: false,
                   fields: [
                     { label: "Link Text", name: text, widget: string, required: false },
-                    { label: "Link URL", name: url, widget: string, required: false },
+                    { label: "Link URL", name: url, widget: string, required: false, hint: " Use /local/url/ or https://other.domain.com/url" },
                     { label: "Open in new tab?", name: newTab, widget: boolean, default: false, required: false }
                   ]
                 }
@@ -149,7 +149,7 @@ collections:
                 { label: "Action", name: action, widget: object,
                   fields: [
                     { label: "Action Text", name: text, widget: string },
-                    { label: "Action URL", name: url, widget: string, hint: "/local/url/ or https://other.domain.com/url" },
+                    { label: "Action URL", name: url, widget: string, hint: " Use /local/url/ or https://other.domain.com/url" },
                   ]
                 }
               ]
@@ -162,7 +162,7 @@ collections:
                 { label: "Action", name: action, widget: object,
                   fields: [
                     { label: "Action Text", name: text, widget: string },
-                    { label: "Action URL", name: url, widget: string },
+                    { label: "Action URL", name: url, widget: string, hint: " Use /local/url/ or https://other.domain.com/url" },
                   ]
                 }
               ]
@@ -175,7 +175,7 @@ collections:
                 { label: "Action", name: action, widget: object,
                   fields: [
                     { label: "Action Text", name: text, widget: string },
-                    { label: "Action URL", name: url, widget: string },
+                    { label: "Action URL", name: url, widget: string, hint: " Use /local/url/ or https://other.domain.com/url" },
                   ]
                 }
               ]
