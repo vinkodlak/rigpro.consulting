@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
+import Header from '../components/Header'
 import Content, { HTMLContent } from '../components/Content'
 
 export const CoursesPageTemplate = ({ title, content, contentComponent }) => {
@@ -35,10 +36,12 @@ const CoursesPage = ({ data }) => {
   const { markdownRemark: post } = data
 
   return (
-    <Layout>
+    <Layout
+      header={(
+        <Header><h1>{post.frontmatter.title}</h1></Header>
+      )}
+    >
       <CoursesPageTemplate
-        contentComponent={HTMLContent}
-        title={post.frontmatter.title}
         content={post.html}
       />
     </Layout>

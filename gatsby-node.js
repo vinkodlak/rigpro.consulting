@@ -12,6 +12,16 @@ const processField = (field) => {
 
 exports.createResolvers = ({ createResolvers  }) => {
   const resolvers = {
+    MarkdownRemarkFrontmatter: {
+      authorLink: {
+        type: 'MarkdownRemark',
+        resolve: (source, args, context, info) => {
+          const nodes = context.nodeModel.getAllNodes({ type: 'MarkdownRemark' })
+          const authors = nodes.filter(node => node.frontmatter.templateKey === 'author')
+          return authors.find(author => author.frontmatter.name === source.author)
+        }
+      }
+    },
     MarkdownRemarkFrontmatterSection1: {
       body: {
         resolve: (source) => processField(source.body)
@@ -80,7 +90,7 @@ exports.createPages = ({ actions, graphql }) => {
 
     posts.forEach(edge => {
       const id = edge.node.id
-      if (!['settings-page', 'author', 'blog-post'].includes(edge.node.frontmatter.templateKey)) {
+      if (!['settings-page', 'author'].includes(edge.node.frontmatter.templateKey)) {
         createPage({
           path: edge.node.fields.slug,
           component: path.resolve(
