@@ -11,7 +11,7 @@ background-position: left center;
 background-repeat: no-repeat;
 display: grid;
 
-h1 {
+h1, span {
   align-self: end;
   font: 100 40px var(--SegoeUI);
   color: #fff;

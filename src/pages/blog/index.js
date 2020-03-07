@@ -33,16 +33,26 @@ const BlogMeta = styled.div`
 const Blog = styled.article`
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  // grid-auto-flow: dense;
 
   ${BlogImage} {
     grid-column: ${props => props.index % 2 === 0? 2 : 7} / span 5;
     order: ${props => props.index % 2 === 0? 0 : 1};
+
+    @media screen and (max-width: 991px) {
+      grid-column: 1 / -1;
+      order: 0;
+    }
+
   }
   ${BlogMeta} {
     grid-column: ${props => props.index % 2 === 0? 7 : 2} / span 5;
     order: ${props => props.index % 2 === 0? 1 : 0};
     background-color: ${props => props.index % 2 === 0? 'transparent' : 'var(--lightgray)'};
+    
+    @media screen and (max-width: 991px) {
+      grid-column: 1 / -1;
+      order: 1;
+    }
   }
 `
 const AuthorImage = styled.div`

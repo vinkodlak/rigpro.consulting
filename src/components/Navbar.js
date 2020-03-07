@@ -166,7 +166,7 @@ export default () => {
           <li><Link to={`/workflow/`} activeClassName="active">Workflow</Link></li>
           <li><Link to={`/software/`} activeClassName="active">Software</Link></li>
           <li><Link to={`/courses/`} activeClassName="active">Courses</Link></li>
-          <li><Link to={`/blog/`} activeClassName="active">Blog</Link></li>
+          <li><Link to={`/blog/`} activeClassName="active" partiallyActive={true}>Blog</Link></li>
           <li><Link to={`/about/`} activeClassName="active">About</Link></li>
           {/* <li><Login to={`/login/`}>Log In</Login></li> */}
         </Ul>
