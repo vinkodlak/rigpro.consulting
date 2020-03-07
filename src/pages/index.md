@@ -1,6 +1,6 @@
 ---
 templateKey: index-page
-title: 'RIGPRO Consulting Services '
+title: 'RIGPRO Consulting '
 metaDescription: Home page meta description
 mainPitch:
   carousel:
@@ -39,7 +39,7 @@ pitches:
     link:
       newTab: false
       text: Click here to learn about our workflow
-      url: '/workflow/'
+      url: /workflow/
     videoLink:
       newTab: false
       text: ''
@@ -63,7 +63,7 @@ pitches:
     link:
       newTab: false
       text: Click here to learn about RIGPRO software
-      url: '/software/'
+      url: /software/
     videoLink:
       newTab: false
   - title: Lorem Ipsum
