@@ -1,49 +1,86 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
+import styled from 'styled-components'
+
+import Link from '../components/Link'
 import Layout from '../components/Layout'
 import Header from '../components/Header'
-import Content, { HTMLContent } from '../components/Content'
+import FullGlobal from '../components/Full'
 
-export const CoursesPageTemplate = ({ title, content, contentComponent }) => {
-  const PageContent = contentComponent || Content
+const Full = styled(FullGlobal)`
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 
-  return (
-    <section className="section section--gradient">
-      <div className="container">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <div className="section">
-              <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-                {title}
-              </h2>
-              <PageContent className="content" content={content} />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  )
-}
+  @media screen and (max-width: 991px) {
+    grid-template-columns: 1fr;
+  }
+`
+const Section = styled.section`
+  padding: 50px 1rem;
+  text-align: center;
+  background-color: ${props => ['#fff', 'var(--lightgray)', 'var(--lightgray2)'][props.index]}
+`
+const Button = styled(Link)`
+  display: inline-block;
+  width: auto;
+  text-transform: initial;
+  padding: 8px 50px;
+  border: 1px solid var(--gray);
+  border-radius: 50px;
+  color: var(--blue);
+  margin-top: 1em;
+  font-size: 18px;
+`
+const Title = styled.h2`
+  font: 100 30px var(--SegoeUI);
+  margin: 26px 0 50px;
+  position: relative;
 
-CoursesPageTemplate.propTypes = {
-  title: PropTypes.string.isRequired,
-  content: PropTypes.string,
-  contentComponent: PropTypes.func,
-}
+  &:after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 5px;
+    background-color: var(--gray);
+    position: absolute;
+    bottom: -25px;
+    left: calc(50% - 25px);
+  }
+`
+const Subtitle = styled.h3`
+  margin: 50px 0 25px;
+  font: 700 18px var(--SegoeUI);
+`
 
 const CoursesPage = ({ data }) => {
-  const { markdownRemark: post } = data
+  const { courses } = data
+
+  const sections = [
+    courses.frontmatter.drillingPersonnel,
+    courses.frontmatter.ggPersonnel,
+    courses.frontmatter.wirelinePersonnel
+  ]
+
+  console.log(sections)
 
   return (
     <Layout
       header={(
-        <Header><h1>{post.frontmatter.title}</h1></Header>
+        <Header><h1>{courses.frontmatter.title}</h1></Header>
       )}
     >
-      <CoursesPageTemplate
-        content={post.html}
-      />
+      <Full>
+        {sections.map((section, index) => (
+          <Section key={index} index={index}>
+            <Title>{section.title}</Title>
+            <Subtitle>{section.subtitle}</Subtitle>
+            <div dangerouslySetInnerHTML={{ __html: section.body }} />
+            <Button to={section.action.url}>{section.action.text}</Button>
+          </Section>
+        ))}
+
+      </Full>
     </Layout>
   )
 }
@@ -56,10 +93,36 @@ export default CoursesPage
 
 export const coursesPageQuery = graphql`
   query CoursesPage($id: String!) {
-    markdownRemark(id: { eq: $id }) {
-      html
+    courses: markdownRemark(id: { eq: $id }) {
       frontmatter {
         title
+        drillingPersonnel {
+          title
+          subtitle
+          body
+          action {
+            text
+            url
+          }
+        }
+        ggPersonnel {
+          title
+          subtitle
+          body
+          action {
+            text
+            url
+          }
+        }
+        wirelinePersonnel {
+          title
+          subtitle
+          body
+          action {
+            text
+            url
+          }
+        }
       }
     }
   }

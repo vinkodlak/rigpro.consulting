@@ -100,21 +100,54 @@ export default () => {
   `)
 
   const { settings: { frontmatter: { interests }}} = data
+  
+  const getMailtoUrl = (to, subject, body) => {
+      var args = [];
+      if (typeof subject !== 'undefined') {
+          args.push('subject=' + encodeURIComponent(subject));
+      }
+      if (typeof body !== 'undefined') {
+          args.push('body=' + encodeURIComponent(body))
+      }
+
+      var url = 'mailto:' + encodeURIComponent(to);
+      if (args.length > 0) {
+          url += '?' + args.join('&');
+      }
+      return url;
+  }
 
   // const { register, handleSubmit, control, setValue } = useForm()
-  const onSubmit = data => console.log(data)
+  const onSubmit = data => {
+    console.log(data)
+    const mailUrl = getMailtoUrl(
+      'ivor.filipovic@rigpro.earth',
+      `Interested in: ${data.interest}`,
+      `
+      firstName=${data.firstName}
+      lastName=${data.lastName}
+      email=${data.email}
+      interest=${data.interest}
+      message=${data.message}
+      `
+    )
+
+    window.location.href = mailUrl
+
+    
+  }
   const classes = useStyles()
-  const [age, setAge] = React.useState('');
+  const [interest, setInterest] = React.useState('');
 
   const handleChange = event => {
-    setAge(event.target.value)
+    setInterest(event.target.value)
   }
 
   return (
     <ContactWrap>
       <Contact>
       <Title>Contact Us</Title>
-      <Form onSubmit={onSubmit}>
+      <Form action="mailto:ivor.filipovic@rigpro.earth" method="post" enctype="text/plain">
         <FormControl id="firstName">
           <TextField default="" name="firstName" placeholder="First Name" />
         </FormControl> 
@@ -126,14 +159,15 @@ export default () => {
         </FormControl>
         <FormControl id="interest">
           <Select
+            name="interest"
             mode="multiple"
             displayEmpty 
-            value={age}
+            value={interest}
             onChange={handleChange}
           >
             <MenuItem value="" disabled>Interested In</MenuItem>
             {interests.map(({ interest }) => (
-              <MenuItem value={interest}>{interest}</MenuItem>
+              <MenuItem key={interest} value={interest}>{interest}</MenuItem>
             ))}
           </Select>
         </FormControl>
@@ -141,7 +175,7 @@ export default () => {
           <TextField default="" name="message" placeholder="Message" />
         </FormControl>
 
-        <Button className={classes.button} id="send" shape="round" onClick={onSubmit}>Send</Button>
+        <Button className={classes.button} id="send" shape="round" type="submit">Send</Button>
 
       </Form>
       {/* <Form onSubmit={handleSubmit(onSubmit)}>

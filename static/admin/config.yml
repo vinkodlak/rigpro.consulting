@@ -149,7 +149,7 @@ collections:
                 { label: "Action", name: action, widget: object,
                   fields: [
                     { label: "Action Text", name: text, widget: string },
-                    { label: "Action URL", name: url, widget: string },
+                    { label: "Action URL", name: url, widget: string, hint: "/local/url/ or https://other.domain.com/url" },
                   ]
                 }
               ]
