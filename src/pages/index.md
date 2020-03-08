@@ -29,10 +29,11 @@ mainPitch:
 pitches:
   - title: How Do We Operate?
     body: >-
-      Regardless of whether we are a part of the highest-profile exploration
-      operation in the world, or involved in the most basic logging operation in
-      a mature field, we'll give out 100%, we will improve safety and efficiency
-      and eventually save the money - that is our promise to our clients.
+      Regardless of whether we are involved in the the highest profile
+      exploration operation in the world, or  the most basic logging operation
+      in a mature field, our commencement will always be 100% no matter how big
+      or small a project. Our mission is to improve safety and efficiency and
+      eventually reduce costs - that is our promise to our clients.
     image:
       altText: Alt image1
       image: /img/Image-2.png
@@ -76,4 +77,4 @@ pitches:
     videoLink:
       newTab: false
 ---
-**Unique blend of cutting-edge software coupled with vast field experience positions us at the top of the list of Wireline QA/QC providers. Contact us today to find out more.**
+**A unique blend of cutting-edge software coupled with vast field experience positions us at the top of the list of Wireline QA/QC providers. Contact us today to find out more.**
