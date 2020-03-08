@@ -10,9 +10,9 @@ workflows:
     title: Initial contact
   - body: >-
       It is our firm belief that there needs to be a perfect match between both
-      parties. We will look into a particular project requirements and key
+      parties. We will investigate all particular project requirements and key
       information - service company, geographical region, project complexity -
-      and find the right expert for your project.
+      and fit the right expert for your project.
     description: >-
       We match the perfect consultant with skill sets that fit your needs and
       set up a meet and greet.
@@ -23,26 +23,27 @@ workflows:
       Agreement, Consulting contract etc.
     description: 'NDA, consulting contract between the Client and the RIGPRO team.'
     image: /img/03_PAPERWORK_SIGNED.jpg
-    title: Paperwork signed
+    title: 'Documents Signed '
   - body: >-
       Your dedicated expert is getting up to speed with the project. Information
       requests are sent as required - from Operations Geologist, Service
       Company, Drilling Contractor...all the way to Senior Drilling Engineer and
       Drilling Supervisors. At this stage, a full and detailed picture of the
-      project specifics is built.
+      project specifics is created.
     description: >-
       Key operational information is shared - country, rig, service provider,
       contacts...
     image: /img/04_INFORMATION_EXCHANGE.jpg
     title: Information exchange
   - body: >-
-      Our experts are proficient in tendering procedure and are able to review
-      and analyse tender package, and provide a constructive input.
+      Our experts are proficient in the tendering procedure and are able to
+      review and analyse the tender package, and provide a constructive input.
 
 
-      This is a critical stage in which any ambiguities need to be resolved,
-      since after effects of inadequate tendering process are severe and costly.
-    description: >-
+      This is an extremely critical stage in which any ambiguities need to be
+      resolved, since after effects of inadequate tendering process are severe
+      and costly.
+    description: >
       Depending on the specific requirements, our team will assist throughout
       the tendering process.
     image: /img/05_TENDER_REVIEWED.jpg
@@ -53,7 +54,9 @@ workflows:
       ensure full compliance and transparency throughout the project.
     description: >-
       Reviewing the contract by an expert has been proven beneficial for the
-      operator, over and over again.
+      operator, over and over again.  Don't let the service companies up sell
+      you equipment that is not necessary for the operation, or leave you short
+      of critical tools for the campaign.
     image: /img/06_CONTRACT_REVIEWED.jpg
     title: Contract reviewed
   - body: >-
@@ -61,8 +64,9 @@ workflows:
       to track wireline activities throughout the project. Enjoy the benefits of
       the world's most advanced wireline QC platform on your project, free of
       charge* (applies to two desktop and two mobile licenses). Click
-      [here](https://www.rigpro.earth) to find out more about the RIGPRO QAQC Platform.
-    description: Setting the cornerstone to systematically monitor wireline activities.
+      [here](https://www.rigpro.earth) to find out more about the RIGPRO QAQC
+      Platform.
+    description: 'Setting the cornerstone to systematically monitor wireline activities. '
     image: /img/07_RIGPRO_SOFTWARE_PROJECT_CREATED.jpg
     title: RIGPRO Software - Project Created
   - body: >-
@@ -74,10 +78,11 @@ workflows:
     image: /img/08_RIGPRO_SOFTWARE_TRAINING_PROVIDED.jpg
     title: RIGPRO Software - Training provided
   - body: >-
-      We coordinate between all the parties, to produce a detailed,
-      all-inclusive SOP. This document includes every important aspect of a
-      successful operation - from Safety, General operating procedures down to
-      specific instructions on deliverables and distribution lists.
+      We coordinate between all the parties to produce a detailed, all-inclusive
+      SOP. This document includes every important aspect of a successful
+      operation - Starting with the priority of working safely to general
+      operating procedures and all the way down to specific instructions on
+      deliverables and distribution lists.
     description: >-
       Written Standard Operating Procedures - a foundation to a successful
       project.
