@@ -3,8 +3,8 @@ templateKey: workflow-page
 title: Workflow
 workflows:
   - body: >-
-      At the beginning of the project we get to know each other. Contact details
-      are shared and we get a better idea of your expectations.
+      At the beginning of the project, we establish a rapport with the client.
+      Contact details are shared and  expectations are identified.
     description: Initial date - getting to know each other.
     image: /img/01_INITIAL_CONTACT.jpg
     title: Initial contact
