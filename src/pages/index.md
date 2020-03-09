@@ -33,7 +33,7 @@ pitches:
       exploration operation in the world or  the most basic logging operation in
       a mature field, our commitment will always be 100%, no matter how big or
       small a project. Our mission is to improve safety and operational
-      efficiency along with reducing costs - that is our promise to our clients.
+      efficiency along with reducing costs - that is our promise to our Clients.
     image:
       altText: Alt image1
       image: /img/Image-2.png
