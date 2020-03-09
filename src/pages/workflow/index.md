@@ -41,8 +41,8 @@ workflows:
 
 
       This is an extremely critical stage in which any ambiguities need to be
-      resolved, since after effects of inadequate tendering process are severe
-      and costly.
+      identified and resolved. The consequences of an inadequate tendering
+      process are severe and costly.
     description: >
       Depending on the specific requirements, our team will assist throughout
       the tendering process.
@@ -54,9 +54,9 @@ workflows:
       ensure full compliance and transparency throughout the project.
     description: >-
       Reviewing the contract by an expert has been proven beneficial for the
-      operator, over and over again.  Don't let the service companies up sell
+      operator, over and over again.  Don't let the service companies up-sell
       you equipment that is not necessary for the operation, or leave you short
-      of critical tools for the campaign.
+      of critical equipment required for the campaign. 
     image: /img/06_CONTRACT_REVIEWED.jpg
     title: Contract reviewed
   - body: >-
@@ -72,59 +72,58 @@ workflows:
   - body: >-
       A powerful software such as RIGPRO Wireline QA/QC requires users to
       undergo an initial training. We organize online sessions and provide
-      necessary training which is targeted at different user groups (drilling,
-      geology, project managers)
+      necessary training, which is targeted at all user groups (drilling,
+      geology, project managers,etc).
     description: Crash course to get the users up to speed.
     image: /img/08_RIGPRO_SOFTWARE_TRAINING_PROVIDED.jpg
     title: RIGPRO Software - Training provided
   - body: >-
-      We coordinate between all the parties to produce a detailed, all-inclusive
+      We coordinate between all parties to produce a detailed, all-inclusive
       SOP. This document includes every important aspect of a successful
       operation - Starting with the priority of working safely to general
-      operating procedures and all the way down to specific instructions on
-      deliverables and distribution lists.
+      operating procedures, inclusive of all the fine details outlining
+      specifics such as deliverables and distribution lists.
     description: >-
       Written Standard Operating Procedures - a foundation to a successful
       project.
     image: /img/09_SOP_CREATED.jpg
     title: SOP created
   - body: >-
-      This might be the client's offices for tender preparation or contract
+      This might be the client's office for tender preparation or contract
       review, the service provider's facility to perform an audit or a visit to
-      the drilling installation to ensure all the planned services can be
+      the drilling installation to ensure all the planned services will be
       executed safely and efficiently.
     description: Dedicated expert headed to where the action is.
     image: /img/10_CONSULTANT_DEPLOYED.jpg
     title: Consultant deployed
   - body: >-
       Maintenance of wireline equipment is one of the important aspects of a
-      successful project. This can not be over-stressed. At this stage, our
-      Client will have a robust Contract in place to protect the Operator from
+      successful project. This cannot be stressed enough! At this stage, our
+      Client will have a robust contract in place to protect the Operator from
       unnecessary costs related to the equipment maintenance.
 
 
-      We are able to review maintenance status remotely (from the office) but
+      We are able to review maintenance status remotely (from the office), but
       the most thorough examination can be performed only when our expert is on
       spot - at the Service Provider's maintenance facility. We will ensure that
-      the client does not pay for tools until they have met a ridged quality
+      the Client does not pay for tools until they have met a ridged quality
       control inspection and are fit for purpose.
     description: >-
-      How many times have you ended up paying for a pile of tool that didn't
-      even work and then pay to have them fixed? 
+      How many times have you ended up paying for a pile of tools that didn't
+      even work and then pay to have them repaired? 
     image: /img/11_MAINTENANCE_STATUS_SCRUTINIZED.jpg
     title: Maintenance status scrutinized
   - body: >-
       Not only that - we will ensure the wireline contractor has delivered the
-      equipment and is ready to perform all services, including the non-routine
-      scenarios, including drilling support, emergency procedures, etc.
+      equipment and is ready to perform all services, inclusive of all
+      non-routine scenarios; drilling support, emergency procedures, etc.
 
 
-      We will ensure all the equipment certificates are in date, as well as a
-      certification and maintenance plan in place throughout the duration of the
-      project.
+      We will ensure all equipment certifications are in date, as well as a
+      comprehensive maintenance plan for duration of the project.
     description: >-
       We will match the equipment with the contractual obligations and ensure
-      sure you are not paying for your neighbors Porsche.
+      sure you are not paying for your neighbor's Porsche.
     image: /img/12_EQUIPMENT_INVENTORIED.jpg
     title: Equipment inventoried
   - body: >-
@@ -134,43 +133,43 @@ workflows:
 
 
       All the auxiliaries (stand-offs, decentralizers, low friction rollers) are
-      attached to the string, OD's physically measured and pictures taken. We
+      attached to the string, OD's physically measured and photos taken. We
       leave nothing to chance.
     description: >-
-      With a proposed logging program in hand, we work hard with the logging
+      With a proposed logging program, we work hand in hand with the logging
       crew to ensure all the logging string combos are thoroughly tested.
     image: /img/13_TOOLS_CHECKED.jpg
     title: Tools checked
   - body: >-
       This is a routine operation, providing all the planning was thoroughly
-      laid out ahead of the time. At this stage, it is too late to think about
-      the unit zonation, or devise a plan to change out the logging cable!
+      laid out prior to the load out. At this stage, it is too late to think
+      about the unit zonation, or devise a plan to change out the logging cable!
     description: >-
-      Moving Day! Having already secured the real estate on the rig it is now
+      Moving Day! Having already secured the real estate on the rig, it is now
       time to unpack and meet the neighbors. 
     image: /img/14_UNIT_INSTALLED.jpg
     title: Unit installed
   - body: >-
       Logging Well on Paper - a huge step to improving operational efficiency.
-      We get together all the key people - wireline engineers and operators,
-      drilling supervisor, tool pusher and performance coach - and run through
-      the job, step-by-step. This is a powerful exercise and test of
-      preparedness - and usually results in a number of suggestions for
-      improvement. Minutes of meeting are subsequently incorporated in the final
-      logging program.
-    description: Pregame meeting. Let's review the game book.
+      We gather all the key people - wireline engineers and operators, drilling
+      supervisor, tool pusher and performance coach - and run through the job,
+      step-by-step. This is a powerful exercise and test of preparedness - and
+      usually results in a number of suggestions for improvement. Minutes of the
+      meeting are subsequently incorporated in the final logging program.
+    description: Pregame meeting - Let's review the game book.
     image: /img/15_LWOP_MEETING.jpg
     title: LWOP meeting
   - body: >-
-      Culmination of all the hard work invested over the last several months.
+      **Culmination of all the hard work invested over the last several months**
 
 
-      RIGPRO consultant is there 24/7 and lives through the operation with the
-      logging crew. Our expert blends with the team and ensures no corners are
-      cut. All the activities are tracked in RIGPRO Wireline QAQC software to a
-      second - office teams are able to witness the operation as it unfolds, on
-      their laptops and mobile phones. Operational database is built on the go,
-      and contains all the timings and speeds.
+      RIGPRO consultant is on site 24/7 and lives through the operation with the
+      logging crew. Our expert blends with the team to ensure no corners are cut
+      and procedures are followed. All the activities and operational times are
+      tracked in RIGPRO Wireline QAQC software to the second. Office teams are
+      able to witness the operation as it unfolds, on their laptops and mobile
+      phones. Operational database is created on the go and contains real time
+      events.
     description: Show time!
     image: /img/16_LOGGING_EXECUTED.jpg
     title: Logging executed
@@ -178,7 +177,7 @@ workflows:
       Within 24 hours from rigging down wireline, an AAR meeting is held with
       the key team members. Every step of the job is critically reviewed.
       Continuous improvement is driven by adding the lessons learned to the
-      RIGPRO database and incorporating in future logging programs.
+      RIGPRO database and incorporating into future logging programs.
     description: >-
       Time to review the game, identify areas of improvement and hand out the
       game ball.
@@ -188,7 +187,7 @@ workflows:
       Advanced statistical analysis, which is available in RIGPRO Wireline QA/QC
       software, helps us to break down the operation by segments, and to focus
       on areas where the most significant savings are achievable- without
-      jeopardizing safety or data quality, this goes without saying!
+      jeopardizing safety or data quality. This goes without saying!
     description: Nothing less than 100 percent is considered acceptable!
     image: /img/18_EFFICIENCY_ANALYSED.jpg
     title: Efficiency analysed
@@ -196,7 +195,7 @@ workflows:
       The review of the data quality is only a single part of the LQC report. A
       typical report produced by RIGPRO Wireline QA/QC software will contain
       much more - from well information, personnel and equipment overview,
-      various time analyses all the way to lessons learnt and suggestions for
+      various time analyses all the way to lessons learned and suggestions for
       future improvements. The whole package!
     description: Log quality control report - a written bequest to the logging operation.
     image: /img/19_REPORT_ISSUED.jpg
@@ -209,10 +208,14 @@ workflows:
       Believe it or not, a typical exploration logging job will result in close
       to a hundred distinct products! It is imperative to closely track the
       status and ensure delivery of exceptional quality logs and data in a
-      timely manner. This is is where a well written SOP with a well-defined
-      Data Matrix comes in handy. All the data must be delivered before the end
-      of the project! Once the project team is released, it becomes very
-      difficult to obtain any additional logs.
+      timely manner. 
+
+
+      This is why a well-written SOP, with a well-defined Data Matrix, is
+      essential to identify all the requirements of the Client. All the data
+      must be delivered before the end of the project! Once the project team is
+      released, it becomes very difficult to obtain any additional data
+      requirements.
     description: 'Deliverables are of little use if they have not been...well, delivered.'
     image: /img/20_DELIVERABLES_FOLLOW-UP.jpg
     title: Deliverables follow-up
