@@ -9,10 +9,10 @@ workflows:
     image: /img/01_INITIAL_CONTACT.jpg
     title: Initial contact
   - body: >-
-      It is our firm belief that there needs to be a perfect match between both
-      parties. We will investigate all particular project requirements and key
-      information - service company, geographical region, project complexity -
-      and fit the right expert for your project.
+      We firmly believe in the importance of a perfect match between the client
+      and consultant. We will investigate all particular project requirements
+      and key information - service company, geographical region, project
+      complexity - and fit the right expert for your project.
     description: >-
       We match the perfect consultant with skill sets that fit your needs and
       set up a meet and greet.
