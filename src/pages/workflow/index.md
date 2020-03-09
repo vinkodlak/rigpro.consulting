@@ -3,18 +3,18 @@ templateKey: workflow-page
 title: Workflow
 workflows:
   - body: >-
-      At the beginning of the project, we establish a rapport with the client.
+      At the beginning of the project, we establish a rapport with the Client.
       Contact details are shared and  expectations are identified.
     description: Initial date - getting to know each other.
     image: /img/01_INITIAL_CONTACT.jpg
     title: Initial contact
   - body: >-
-      We firmly believe in the importance of a perfect match between the client
-      and consultant. We will investigate all particular project requirements
+      We firmly believe in the importance of a perfect match between the Client
+      and Consultant. We will investigate all particular project requirements
       and key information - service company, geographical region, project
       complexity - and fit the right expert for your project.
     description: >-
-      We match the perfect consultant with skill sets that fit your needs and
+      We match the perfect Consultant with skill sets that fit your needs and
       set up a meet and greet.
     image: /img/02_SELECTING_A_CONSULTANT.jpg
     title: Selecting a consultant
