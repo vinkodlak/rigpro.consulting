@@ -7,9 +7,9 @@ mainPitch:
     - image: /img/consulting_2.jpg
       title: Wireline Consulting
       body: >-
-        We bring functional expertise to the table, on any wireline logging
+        We bring functional expertise to the table on any wireline logging
         project. Our holistic approach ensures time and money are saved in each
-        step of the operation and, at the same time, safety awareness is
+        step of the operation, and at the same time, safety awareness is
         increased in a continuous improvement cycle.
     - image: /img/work_on_2.jpg
       title: Wellsite Witnessing
@@ -24,16 +24,16 @@ mainPitch:
       body: >-
         We offer practical wireline logging education to a wide range of
         audiences. From Petrophysicists to Drilling Supervisors - our targeted
-        QA/QC courses are tailored to minimize time and maximize benefit. Both
+        QA/QC courses are tailored to minimize time and maximize benefits. Both
         online and class-based courses are available.
 pitches:
   - title: How Do We Operate?
     body: >-
       Regardless of whether we are involved in the the highest profile
-      exploration operation in the world, or  the most basic logging operation
-      in a mature field, our commencement will always be 100% no matter how big
-      or small a project. Our mission is to improve safety and efficiency and
-      eventually reduce costs - that is our promise to our clients.
+      exploration operation in the world or  the most basic logging operation in
+      a mature field, our commitment will always be 100%, no matter how big or
+      small a project. Our mission is to improve safety and operational
+      efficiency along with reducing costs - that is our promise to our clients.
     image:
       altText: Alt image1
       image: /img/Image-2.png
@@ -48,11 +48,10 @@ pitches:
   - title: RIGPRO Software
     body: >-
       RIGPRO Wireline QC software is world's first software platform to assist
-      the quality control of a wireline logging operation.
-
-      RIGPRO software comes as desktop and mobile application. It is installed
-      on devices of all the stakeholders in a logging operation - Logging
-      Witness, Operations Geologist, Drilling Supervisor, Wellsite Geologist...
+      in the quality control of a wireline logging operation. RIGPRO software is
+      available as desktop and mobile application. It is installed on devices of
+      all the stakeholders in a logging operation - Logging Witness, Operations
+      Geologist, Drilling Supervisor, Wellsite Geologist...
 
       Instead of spreadsheets and word documents, information is entered into
       the RIGPRO desktop application. Users are able to monitor the operation in
