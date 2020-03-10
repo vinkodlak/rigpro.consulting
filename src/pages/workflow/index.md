@@ -212,10 +212,10 @@ workflows:
       timely manner. 
 
 
-      This is why a well-written SOP, with a well-defined Data Matrix, is
+      This is where a well-written SOP, with a well-defined Data Matrix, is
       essential to identify all the requirements of the Client. All the data
       must be delivered before the end of the project! Once the project team is
-      released, it becomes very difficult to obtain any additional data
+      released, it becomes very difficult to finalize any additional data
       requirements.
     description: 'Deliverables are of little use if they have not been...well, delivered.'
     image: /img/20_DELIVERABLES_FOLLOW-UP.jpg
