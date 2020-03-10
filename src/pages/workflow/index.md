@@ -119,8 +119,9 @@ workflows:
       non-routine scenarios; drilling support, emergency procedures, etc.
 
 
-      We will ensure all equipment certifications are in date, as well as a
-      comprehensive maintenance plan for duration of the project.
+      We will audit all equipment and validate that all certifications are in
+      date and work with the maintenance staff on a comprehensive maintenance
+      plan for all equipment for the duration of the project.
     description: >-
       We will match the equipment with the contractual obligations and ensure
       sure you are not paying for your neighbor's Porsche.
