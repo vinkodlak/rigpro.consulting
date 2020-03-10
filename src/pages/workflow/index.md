@@ -104,10 +104,10 @@ workflows:
 
 
       We are able to review maintenance status remotely (from the office), but
-      the most thorough examination can be performed only when our expert is on
-      spot - at the Service Provider's maintenance facility. We will ensure that
-      the Client does not pay for tools until they have met a ridged quality
-      control inspection and are fit for purpose.
+      the most thorough examination is performed only when our expert is on site
+      - at the Service Provider's maintenance facility. We will ensure that the
+      Client does not pay for tools until they have met a ridged quality control
+      inspection and are fit for purpose.
     description: >-
       How many times have you ended up paying for a pile of tools that didn't
       even work and then pay to have them repaired? 
