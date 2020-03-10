@@ -3,9 +3,9 @@ templateKey: about-page
 title: About
 section1:
   body: >-
-    We are knowledgeable, focused and passionate about what we do. Despite many
-    years of field exposure, we're still in love with the field work and all ups
-    and downs it offers.
+    At RIGPRO Consulting we are knowledgeable, focused and passionate about what
+    we do. Despite many years of field exposure, we're still in love with the
+    field work and all the challenges it offers.
 
 
     If you do grant us your trust, we'll prove to you we are the best Wireline
@@ -15,13 +15,13 @@ section2:
   body: >-
     From deserts to subarctic. Trucks, land operations, jack-ups, drilling
     ships, semi-submersible rigs....you name it, we've been there. We've been
-    involved in well-established operations, and we also ran remote projects
+    involved in well-established operations as well as small remote projects
     with only a fistful of people.
 
 
-    Our particular stronghold are highly demanding operations with limited
-    support, one-off projects requiring extensive planning for a seamless
-    execution. That's where we shine.
+    Our particular stronghold includes highly demanding operations with limited
+    resources and support, one-off projects requiring extensive planning for a
+    seamless execution. This is where we shine!
   countries:
     - RU
     - KE
