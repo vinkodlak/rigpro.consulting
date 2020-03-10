@@ -96,4 +96,4 @@ Both RIGPRO client (desktop application) and the mobile application connect to t
 
 In the field, we make use of a briefcase data caching model. If the internet connection is temporarily lost between the  rig and server, data will be stored locally until the connection is re-established.
 
-The RIGPRO client app can also be used as a standalone application. This is a perfect solution for log witnesses who do not need the real-time communication and server backup, but still want to profit from the automated QC process. The app provides an insightful and attractive visualization tool and streamlines report creation.
+The RIGPRO client app can also be used as a standalone application. This is a perfect solution for log witnesses who do not need real-time communication and server backup, but still want to profit from the automated QC process. The app provides an insightful and attractive visualization tool and streamlines report creation.
