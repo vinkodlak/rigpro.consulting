@@ -49,14 +49,14 @@ pitches:
     body: >-
       RIGPRO Wireline QC software is world's first software platform to assist
       in the quality control of a wireline logging operation. RIGPRO software is
-      available as desktop and mobile application. It is installed on devices of
-      all the stakeholders in a logging operation - Logging Witness, Operations
-      Geologist, Drilling Supervisor, Wellsite Geologist...
-
-      Instead of spreadsheets and word documents, information is entered into
-      the RIGPRO desktop application. Users are able to monitor the operation in
-      real time, produce various reports and time breakdowns, create pressure
-      charts and gradients and much more.
+      available as a desktop and mobile application. It can be  installed on
+      devices of all the stakeholders in a logging operation - Logging Witness,
+      Operations Geologist, Drilling Supervisor, Wellsite Geologist... Instead
+      of spreadsheets and word documents, information is entered into the RIGPRO
+      desktop application. Users are able to monitor the operation in real time,
+      produce various reports and time breakdowns, create pressure charts and
+      gradients and much more. Wireline operations can now be monitored real
+      time from the office, home, or on the road on your smart phone!
     image:
       altText: 'A,lt image 2'
       image: /img/Image-3.png
