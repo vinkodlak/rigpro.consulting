@@ -28,7 +28,7 @@ workflows:
       Your dedicated expert is getting up to speed with the project. Information
       requests are sent as required - from Operations Geologist, Service
       Company, Drilling Contractor...all the way to Senior Drilling Engineer and
-      Drilling Supervisors. At this stage, a full and detailed picture of the
+      Drilling Supervisors. At this stage, a full and detailed image of the
       project specifics is created.
     description: >-
       Key operational information is shared - country, rig, service provider,
@@ -97,7 +97,7 @@ workflows:
     image: /img/10_CONSULTANT_DEPLOYED.jpg
     title: Consultant deployed
   - body: >-
-      Maintenance of wireline equipment is one of the important aspects of a
+      Maintenance of wireline equipment is one of the most critical aspects of a
       successful project. This cannot be stressed enough! At this stage, our
       Client will have a robust contract in place to protect the Operator from
       unnecessary costs related to the equipment maintenance.
