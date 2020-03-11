@@ -7,10 +7,11 @@ mainPitch:
     - image: /img/consulting_2.jpg
       title: Wireline Consulting
       body: >-
-        We bring functional expertise to the table on any wireline logging
-        project. Our holistic approach ensures time and money are saved in each
-        step of the operation, and at the same time, safety awareness is
-        increased in a continuous improvement cycle.
+        We bring functional expertise to the table on every wireline logging
+        project as well as a passion to succeed! Our holistic approach ensures
+        time and money are saved in each step of the operation, while staying
+        focused on safety awareness at all times, in a continuous improvement
+        cycle.
     - image: /img/work_on_2.jpg
       title: Wellsite Witnessing
       body: >-
