@@ -8,7 +8,7 @@ mainPitch:
       title: Wireline Consulting
       body: >-
         We bring functional expertise to the table on every wireline logging
-        project as well as a passion to succeed! Our holistic approach ensures
+        project, as well as a passion to succeed! Our holistic approach ensures
         time and money are saved in each step of the operation, while staying
         focused on safety awareness at all times, in a continuous improvement
         cycle.
@@ -19,11 +19,11 @@ mainPitch:
         we blend with the logging crew to provide 24/7 supervision, quality
         control and reporting services to our Clients. It is our ultimate goal
         to work safely with the logging crews to provide the Client with high
-        quality data, on depth, with 100 percent operational efficiency.
+        quality data, on depth, with 100 percent operational efficiency!
     - image: /img/education_2.jpg
       title: Logging Courses
       body: >-
-        We offer practical wireline logging education to a wide range of
+        We offer a practical wireline logging education to a wide range of
         audiences. From Petrophysicists to Drilling Supervisors - our targeted
         QA/QC courses are tailored to minimize time and maximize benefits. Both
         online and class-based courses are available.
