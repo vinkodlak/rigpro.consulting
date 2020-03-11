@@ -164,13 +164,13 @@ workflows:
       **Culmination of all the hard work invested over the last several months**
 
 
-      RIGPRO consultant is on site 24/7 and lives through the operation with the
-      logging crew. Our expert blends with the team to ensure no corners are cut
-      and procedures are followed. All the activities and operational times are
-      tracked in RIGPRO Wireline QAQC software to the second. Office teams are
-      able to witness the operation as it unfolds, on their laptops and mobile
-      phones. Operational database is created on the go and contains real time
-      events.
+      RIGPRO consultants are on site 24/7 and live through the operation with
+      the logging crew. Our experts blend with the team to ensure no corners are
+      cut and procedures are followed. All the activities and operational times
+      are tracked in RIGPRO Wireline QAQC software to the second. Office teams
+      are able to witness the operation as it unfolds, on their laptops and
+      mobile phones. Operational database is created on the go and contains real
+      time events.
     description: Show time!
     image: /img/16_LOGGING_EXECUTED.jpg
     title: Logging executed
