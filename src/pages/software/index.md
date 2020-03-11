@@ -20,9 +20,9 @@ sections:
         continuously up to date with current events during the wireline logging
         job. From the current tool string depth to accurate time statistics, any
         information is readily available. Current problems, as well as potential
-        issues, are distributed across the teams. No more disruptive and
-        annoying phone calls to the wireline unit asking such questions as,
-        "What depth are you?".
+        issues, are distributed across the teams. No more unnecessary and
+        distracting phone calls to the wireline unit asking such questions as,
+        "What depth is the tool string?".
   - image:
       altText: Comunication
       image: /img/SemaPlatforme.png
