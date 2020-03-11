@@ -38,7 +38,7 @@ sections:
         on…everyone knows what’s going on. Operational transparency and time
         efficiency is guaranteed!
     part2:
-      title: Dana-Driven Decision-Making
+      title: Data-Driven Decision-Making
       body: >-
         This is finally possible during the operation, because you are in the
         know at all times. Key information is entered only once and is reused
