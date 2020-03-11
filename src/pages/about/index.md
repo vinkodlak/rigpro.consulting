@@ -5,7 +5,7 @@ section1:
   body: >-
     At RIGPRO Consulting we are knowledgeable, focused and passionate about what
     we do. Despite many years of field exposure, we're still in love with the
-    field work and all the challenges it offers.
+    field work and all the challenges and rewards it offers!
 
 
     If you do grant us your trust, we'll prove to you we are the best Wireline
@@ -13,10 +13,10 @@ section1:
   title: Our Experts
 section2:
   body: >-
-    From deserts to subarctic. Trucks, land operations, jack-ups, drilling
-    ships, semi-submersible rigs....you name it, we've been there. We've been
-    involved in well-established operations as well as small remote projects
-    with only a fistful of people.
+    From deserts to subarctic we travel. Trucks, jack-ups, drilling ships,
+    semi-submersible rigs, land, deep water....you name it, we've been there.
+    We've been involved in well-established operations as well as small remote
+    projects with only a fistful of people.
 
 
     Our particular stronghold includes highly demanding operations with limited
@@ -75,12 +75,12 @@ section2:
     - body: |-
         ### Facilities
 
+        * Drilling Tender
         * Drilling and Workover Land Rigs
         * Semi-Submersibles
-        * Drill Ships
+        * Ultra Deep Drill Ships
         * Drilling Pads
-        * Jackups
-        * ...
+        * Jackup Rigs
     - body: |-
         ### Environments
 
@@ -101,7 +101,7 @@ section2:
         * Radiation
         * Explosives
         * Emergency Planning - Response and Evacuation
-        * ...
+        * Open and Cased Hole Operations
   title: Our Experience
 section3:
   body: >-
