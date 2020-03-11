@@ -21,7 +21,7 @@ sections:
         job. From the current tool string depth to accurate time statistics, any
         information is readily available. Current problems, as well as potential
         issues, are distributed across the teams. No more unnecessary and
-        distracting phone calls to the wireline unit asking such questions as,
+        distracting phone calls to the wireline unit asking questions such as
         "What depth is the tool string?".
   - image:
       altText: Comunication
@@ -92,8 +92,6 @@ sections:
         tool-string in a realistic borehole model within seconds and quickly
         decide on a course of action.
 ---
-Both RIGPRO client (desktop application) and the mobile application connect to the server, which is the heart of  the RIGPRO platform. The server is cloud based and is configured and tailored individually for each company.
+Both RIGPRO client (desktop application) and the mobile application connect to the server, which is the heart of  the RIGPRO platform. The server is cloud based and is tailored individually for each company.
 
 In the field, we make use of a briefcase data caching model. If the internet connection is temporarily lost between the  rig and server, data will be stored locally until the connection is re-established.
-
-The RIGPRO client app can also be used as a standalone application. This is a perfect solution for log witnesses who do not need real-time communication and server backup, but still want to profit from the automated QC process. The app provides an insightful and attractive visualization tool and streamlines report creation.
