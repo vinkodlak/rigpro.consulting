@@ -13,15 +13,15 @@ section1:
   title: Our Experts
 section2:
   body: >-
-    From deserts to subarctic we travel. Trucks, jack-ups, drilling ships,
+    From deserts to subarctic we travel. Trucks, jack-ups, drillships,
     semi-submersible rigs, land, deep water....you name it, we've been there.
     We've been involved in well-established operations as well as small remote
-    projects with only a fistful of people.
+    projects with only a fistful of personnel.
 
 
-    Our particular stronghold includes highly demanding operations with limited
-    resources and support, one-off projects requiring extensive planning for a
-    seamless execution. This is where we shine!
+    Our particular stronghold includes highly demanding remote operations with
+    limited resources and support, the one-off projects that require extensive
+    planning for a seamless execution. This is where we shine!
   countries:
     - RU
     - KE
