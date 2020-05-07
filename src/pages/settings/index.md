@@ -6,5 +6,39 @@ contactInterests:
   - interest: Training
   - interest: General Info
   - interest: Career Oportunity
+webinarPositions:
+  - position: G&G - G&G Manager
+  - position: G&G - Operations geologist
+  - position: G&G - Petrophysicist
+  - position: G&G - Reservoir engineer
+  - position: G&G - Logging witness
+  - position: G&G - Wellsite geologist
+  - position: G&G - Marine mammal observer
+  - position: Drilling - Drilling manager
+  - position: Drilling - Drilling superintendant
+  - position: Drilling - DSV
+  - position: Drilling - SDSV
+  - position: Drilling - NDSV
+  - position: Drilling - Data engineer
+  - position: Drilling - Logistics
+  - position: Drilling - HSE
+  - position: Rig - Rig manager
+  - position: Rig - OIM
+  - position: Rig - Toolpusher
+  - position: Rig - Driller
+  - position: Rig - HSE
+  - position: Service company - Engineer
+  - position: Service company - Operations manager
+  - position: Service company - Tehnical support
+  - position: Service company - Field service coordinator
+  - position: Service company - HSE
+  - position: Service company - Logistics
+  - position: Other - Cementing
+  - position: Other - Mudlogging
+  - position: Other - LWD/DD
+  - position: Other - Fishing
+  - position: Other - Casing
+  - position: Other - Subsea
+  - position: Partner
 ---
 
