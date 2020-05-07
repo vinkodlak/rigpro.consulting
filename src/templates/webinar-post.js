@@ -6,7 +6,14 @@ import Layout from '../components/Layout'
 import Header from '../components/Header'
 import Img from 'gatsby-image'
 import ContainerGlobal from '../components/Container'
+import GlobalFull from '../components/Full'
+import WebinarRegister from '../components/WebinarRegister'
 
+
+const Full = styled(GlobalFull)`
+  background-color: var(--lightgray);
+  padding: 50px 0;
+`
 const Container = styled(ContainerGlobal)`
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -74,6 +81,12 @@ export default ({ data }) => {
           <div dangerouslySetInnerHTML={{ __html: blog.html }} />
         </Blog>
       </Container>
+
+      <Full>
+        <ContainerGlobal>
+          <WebinarRegister />
+        </ContainerGlobal>
+      </Full>
     </Layout>
   )
 }
