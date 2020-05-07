@@ -3,7 +3,7 @@ templateKey: workflow-page
 title: Workflow
 workflows:
   - body: >-
-      At the beginning of the project, we establish a rapport with the Client.
+      From the beginning of the project, we establish a rapport with the Client.
       Contact details are shared and  expectations are identified.
     description: Initial date - getting to know each other.
     image: /img/01_INITIAL_CONTACT.jpg
@@ -23,7 +23,7 @@ workflows:
       Agreement, Consulting contract etc.
     description: 'NDA, consulting contract between the Client and the RIGPRO team.'
     image: /img/03_PAPERWORK_SIGNED.jpg
-    title: 'Documents Signed '
+    title: 'Documents signed '
   - body: >-
       Your dedicated expert is getting up to speed with the project. Information
       requests are sent as required - from Operations Geologist, Service
@@ -50,12 +50,12 @@ workflows:
     title: Tender reviewed
   - body: >-
       We always advise our Clients to allow access to the contract between the
-      Client and the Service company in order for our experts to scrutinize, to
+      Client and the service company in order for our experts to scrutinize, to
       ensure full compliance and transparency throughout the project.
     description: >-
       Reviewing the contract by an expert has been proven beneficial for the
       operator, over and over again.  Don't let the service companies up-sell
-      you equipment that is not necessary for the operation, or leave you short
+      you equipment that is not necessary to the operation, or leave you short
       of critical equipment required for the campaign. 
     image: /img/06_CONTRACT_REVIEWED.jpg
     title: Contract reviewed
@@ -71,17 +71,17 @@ workflows:
     title: RIGPRO Software - Project Created
   - body: >-
       A powerful software such as RIGPRO Wireline QA/QC requires users to
-      undergo an initial training. We organize online sessions and provide
+      undergo initial training. Online sessions will be available to provide
       necessary training, which is targeted at all user groups (drilling,
       geology, project managers,etc).
     description: Crash course to get the users up to speed.
     image: /img/08_RIGPRO_SOFTWARE_TRAINING_PROVIDED.jpg
     title: RIGPRO Software - Training provided
   - body: >-
-      We coordinate between all parties to produce a detailed, all-inclusive
-      SOP. This document includes every important aspect of a successful
-      operation - Starting with the priority of working safely to general
-      operating procedures, inclusive of all the fine details outlining
+      Our consultants will coordinate between all parties to produce a detailed,
+      all-inclusive SOP. This document includes every important aspect of a
+      successful operation - Starting with the priority of working safely to
+      general operating procedures, inclusive of all the fine details outlining
       specifics such as deliverables and distribution lists.
     description: >-
       Written Standard Operating Procedures - a foundation to a successful
@@ -95,7 +95,7 @@ workflows:
       executed safely and efficiently.
     description: Dedicated expert headed to where the action is.
     image: /img/10_CONSULTANT_DEPLOYED.jpg
-    title: Consultant deployed
+    title: Consultant Deployed
   - body: >-
       Maintenance of wireline equipment is one of the most critical aspects of a
       successful project. This cannot be stressed enough! At this stage, our
