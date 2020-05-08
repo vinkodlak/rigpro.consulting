@@ -11,10 +11,17 @@ tags:
 ---
 ![](/img/2019-05-17 06_37_48-Pecan South-1A 12.25 logging.png)
 
-tralala sadrzaj
+### **tralala sadrzaj**
+
+#### Ovo je veliki tekst i mora se istaknuti.  Heading 4.
+
+#### Danas učimo:
+
+* #### Zbrajanje
+* #### oduzimanje
+* #### svašta nešto
+* #### ....
 
 slika 2:
 
-
-
-![](/img/Image-3.png)
+![Alt tekst slika](/img/Image-3.png "Title od slike")
