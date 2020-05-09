@@ -99,7 +99,7 @@ export default ({ data }) => {
       )} 
     >
       <Container mt="100" mb="100">
-        {blogs.map((blog, index) => (
+        {blogs.reverse().map((blog, index) => (
           <Blog key={index} index={index}>
             <BlogImage>
               <Link to={blog.fields.slug}>
