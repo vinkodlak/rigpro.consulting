@@ -28,5 +28,5 @@ jobs:
         username: ${{ secrets.USERNAME }}
         port: ${{ secrets.PORT }}
         privateKey: ${{ secrets.KEY }}
-        local: "/public/"
+        local: "/public"
         remote: "/var/www/rigpro.consulting/"
