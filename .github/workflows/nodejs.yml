@@ -23,14 +23,16 @@ jobs:
     - run: npm run build --if-present
     - name: log working directory
       run: pwd
+    - name: tar public
+      run: tar -czvf public.tar.gz ./public
     - name: ls all
       run: ls -l
     - name: copy file via ssh 
-      uses: garygrossgarten/github-action-scp@release
+      uses: appleboy/scp-action@master
       with:
-          local: /home/runner/work/rigpro.consulting/rigpro.consulting/public
-          remote: /var/www/rigpro.consulting
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.USERNAME }}
-          privateKey: ${{ secrets.KEY }}
-          port: ${{ secrets.PORT }}
+        source: /home/runner/work/rigpro.consulting/rigpro.consulting/public.tar.gz
+        target: /var/www/rigpro.consulting
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        key: ${{ secrets.KEY }}
+        port: ${{ secrets.PORT }}
