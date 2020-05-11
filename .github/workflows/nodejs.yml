@@ -22,11 +22,11 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     - name: copy file via ssh key
-      uses: appleboy/scp-action@master
+      uses: garygrossgarten/github-action-scp@release
       with:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
         port: ${{ secrets.PORT }}
-        key: ${{ secrets.KEY }}
-        source: "/public/"
-        target: "/var/www/rigpro.consulting/"
+        privateKey: ${{ secrets.KEY }}
+        local: "/public/"
+        remote: "/var/www/rigpro.consulting/"
