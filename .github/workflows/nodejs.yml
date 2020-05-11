@@ -30,9 +30,24 @@ jobs:
     - name: copy file via ssh 
       uses: appleboy/scp-action@master
       with:
-        source: public.tar.gz
-        target: /var/www/rigpro.consulting
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
         key: ${{ secrets.KEY }}
         port: ${{ secrets.PORT }}
+        source: public.tar.gz
+        target: /var/www
+    - name: multiple command
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        key: ${{ secrets.KEY }}
+        port: ${{ secrets.PORT }}
+        script: |
+          cd /var/www
+          tar -xf public.tar.gz .
+          rm -rf rigpro.consulting.bak
+          mv rigpro.consulting rigpro.consulting.bak
+          mv public rigpro.consulting
+          rm public.tar.gz
+          ls -al
