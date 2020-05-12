@@ -1,17 +1,15 @@
 ---
 templateKey: webinar-post
-title: test webinar
-subtitle: neki subtitle
+title: TEST WEBINAR
+subtitle: Subtitle
 date: 2020-05-07T20:24:22.893Z
-description: description of the webinar
+description: Test webinar subtitle
 featuredpost: false
-featuredimage: /img/platform.png
+featuredimage: /img/2020-02-01 23_09_30-Business Name Generator - Powered by AI - Namelix.png
 tags:
-  - isatg
+  - tag
 ---
-![](/img/2019-05-17 06_37_48-Pecan South-1A 12.25 logging.png)
-
-### **tralala sadrzaj**
+### **Tralala sadrzaj**
 
 #### Ovo je veliki tekst i mora se istaknuti.  Heading 4.
 
@@ -21,7 +19,3 @@ tags:
 * #### oduzimanje
 * #### svašta nešto
 * #### ....
-
-slika 2:
-
-![Alt tekst slika](/img/Image-3.png "Title od slike")
