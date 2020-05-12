@@ -1,5 +1,5 @@
 import React from 'react'
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 import styled from 'styled-components'
 
 import Layout from '../components/Layout'
@@ -8,6 +8,7 @@ import Img from 'gatsby-image'
 import ContainerGlobal from '../components/Container'
 import GlobalFull from '../components/Full'
 import WebinarRegister from '../components/WebinarRegister'
+import ScrollIntoView from 'react-scroll-into-view'
 
 
 const Full = styled(GlobalFull)`
@@ -30,16 +31,6 @@ const Blog = styled.article`
     align-items: center;
   }
 `
-const AuthorImage = styled.div`
-  margin-right: 20px;
-
-  .gatsby-image-wrapper {
-    border: 6px solid #fff;
-    border-radius: 50%;
-    box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.25);
-  }
-`
-const Author = styled.div``
 const Published = styled.time`
 `
 const BlogTitle = styled.h1`
@@ -49,9 +40,35 @@ const BlogTitle = styled.h1`
     color: var(--blue);
   }
 `
-const BlogSubtitle = styled.h2`
-  font: 700 18px var(--SegoeUI);
-  margin: 0 0 20px;
+
+const BlogHeader = styled.header`
+  display: flex;
+  justify-content: space-between;
+
+  a {
+    color: inherit;
+    text-transform: uppercase;
+  }
+`
+const Button = styled.button`
+  display: inline-block;
+  width: auto;
+  text-transform: initial;
+  padding: 8px 50px;
+  border: 1px solid var(--gray);
+  border-radius: 50px;
+  color: var(--blue);
+  margin: 2.5rem auto 1rem;
+  font-size: 18px;
+  background: #fff;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+`
+const ButtonWrap = styled.div`
+  text-align: center;
 `
 
 export default ({ data }) => {
@@ -70,19 +87,26 @@ export default ({ data }) => {
     >
       <Container mt="50" mb="50">
         <Blog>
-          <header>
+          <BlogHeader>
             <Published dateTime={blog.frontmatter.date}>{niceDate(blog.frontmatter.date)}</Published>
-          </header>
+            <Link to="/webinars">Show all webinars</Link>
+          </BlogHeader>
           
           <BlogTitle>{blog.frontmatter.title}</BlogTitle>
 
           <Img fluid={blog.frontmatter.featuredimage.childImageSharp.fluid} />
 
+          <ButtonWrap>
+            <ScrollIntoView selector=".register">
+              <Button>Register for this webinar</Button>
+            </ScrollIntoView>
+          </ButtonWrap>
+
           <div dangerouslySetInnerHTML={{ __html: blog.html }} />
         </Blog>
       </Container>
 
-      <Full>
+      <Full className="register">
         <ContainerGlobal>
           <WebinarRegister />
         </ContainerGlobal>
