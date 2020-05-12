@@ -1,5 +1,7 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { useStaticQuery, graphql } from "gatsby"
+import {useInput } from '../hooks/useInput'
+
 // import { useForm, Controller } from 'react-hook-form'
 // import { Input, Select, Button } from 'antd'
 // import 'antd/es/input/style/css'
@@ -68,7 +70,7 @@ const Form = styled.form`
   #lastName {
     grid-area: 1 / 8 / 1 / -1;
   }
-  #businessEmail {
+  #email {
     grid-area: 2 / 1 / 2 / 7;
   }
   #company {
@@ -92,7 +94,7 @@ const ContactWrap = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 `
-export default () => {
+export default ({webinarTitle, webinarDate}) => {
   const data = useStaticQuery(graphql`
     query WebinarRegisterQuery {
       settings: markdownRemark(frontmatter: {templateKey: {eq: "settings-page"}}) {
@@ -106,23 +108,13 @@ export default () => {
   `)
 
   const { settings: { frontmatter: { positions }}} = data
+  const { value:firstName, bind:bindFirstName, reset:resetFirstName } = useInput('');
+  const { value:lastName, bind:bindLastName, reset:resetLastName } = useInput('');
+  const { value:email, bind:bindEmail, reset:resetEmail } = useInput('');
+  const { value:company, bind:bindCompany, reset:resetCompany } = useInput('');
+  const { value:phone, bind:bindPhone, reset:resetPhone } = useInput('');
+  const { value:message, bind:bindMessage, reset:resetMessage } = useInput('');
   
-  const getMailtoUrl = (to, subject, body) => {
-      var args = [];
-      if (typeof subject !== 'undefined') {
-          args.push('subject=' + encodeURIComponent(subject));
-      }
-      if (typeof body !== 'undefined') {
-          args.push('body=' + encodeURIComponent(body))
-      }
-
-      var url = 'mailto:' + encodeURIComponent(to);
-      if (args.length > 0) {
-          url += '?' + args.join('&');
-      }
-      return url;
-  }
-
   const classes = useStyles()
   const [position, setPosition] = React.useState('');
 
@@ -130,25 +122,41 @@ export default () => {
     setPosition(event.target.value)
   }
 
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    const newLine = `%0D%0a`
+    const subject = `Webinar registration: ${webinarTitle} ${webinarDate}`
+    const body = `First Name: ${escape(firstName)}${newLine}Last Name: ${escape(lastName)}${newLine}Email: ${escape(email)}${newLine}Company: ${escape(company)}${newLine}Phone: ${escape(phone)}${newLine}Position: ${escape(position)}${newLine}Message: ${escape(message)}${newLine}`
+    resetFirstName()
+    resetLastName()
+    resetEmail()
+    resetCompany()
+    resetPhone()
+    resetMessage()
+    setPosition('')
+    window.location = `mailto:webinars@rigpro.earth?subject=${subject}&body=${body}`
+    return false
+  }
+
   return (
     <ContactWrap>
       <Contact>
         <Title>Registration Form</Title>
-        <Form action="mailto:webinars@rigpro.earth" method="post" enctype="text/plain">
+        <Form onSubmit={handleSubmit} >
           <FormControl id="firstName">
-            <TextField default="" name="firstName" placeholder="First Name" />
+            <TextField {...bindFirstName} name="firstName" placeholder="First Name" required />
           </FormControl> 
           <FormControl id="lastName">
-            <TextField default="" name="lastName" placeholder="Last Name" />
+            <TextField {...bindLastName} name="lastName" placeholder="Last Name" required />
           </FormControl>
-          <FormControl id="businessEmail">
-            <TextField default="" name="email" placeholder="Business Email" />
+          <FormControl id="email">
+            <TextField {...bindEmail} name="email" placeholder="Business Email" required />
           </FormControl>
           <FormControl id="company">
-            <TextField default="" name="company" placeholder="Company" />
+            <TextField {...bindCompany} name="company" placeholder="Company" required />
           </FormControl>
           <FormControl id="phone">
-            <TextField default="" name="phone" placeholder="Phone number" />
+            <TextField {...bindPhone} name="phone" placeholder="Phone number" required />
           </FormControl>
           <FormControl id="position">
             <Select
@@ -165,7 +173,7 @@ export default () => {
             </Select>
           </FormControl>
           <FormControl id="message">
-            <TextField default="" name="message" placeholder="Message" />
+            <TextField {...bindMessage} name="message" placeholder="Message" required />
           </FormControl>
 
           <Button className={classes.button} id="send" shape="round" type="submit">Send</Button>

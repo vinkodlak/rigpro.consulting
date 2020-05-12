@@ -108,7 +108,7 @@ export default ({ data }) => {
 
       <Full className="register">
         <ContainerGlobal>
-          <WebinarRegister />
+          <WebinarRegister webinarTitle={blog.frontmatter.title} webinarDate={niceDate(blog.frontmatter.date)} />
         </ContainerGlobal>
       </Full>
     </Layout>
