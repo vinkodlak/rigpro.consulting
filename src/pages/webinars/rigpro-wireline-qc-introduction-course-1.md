@@ -18,4 +18,4 @@ tags:
 
 **Q&A section** (15 min)
 
-![](/img/Image-4.png)
+![](/img/Capture 3.PNG)
