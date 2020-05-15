@@ -5,7 +5,7 @@ subtitle: 'Working on your RIGPRO Wireline QA project, part 1'
 date: 2020-05-15T06:11:29.967Z
 description: Introductory webinar series about RIGPRO Wireline QC software platform.
 featuredpost: false
-featuredimage: /img/Image-4.png
+featuredimage: /img/07_RIGPRO_SOFTWARE_PROJECT_CREATED.jpg
 tags:
   - Webinar 1
 ---
@@ -17,3 +17,5 @@ tags:
 * Introduction to Statistics module. (5 – 10 min)
 
 **Q&A section** (15 min)
+
+![](/img/Image-4.png)
