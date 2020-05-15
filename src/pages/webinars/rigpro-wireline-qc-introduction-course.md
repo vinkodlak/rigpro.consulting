@@ -1,6 +1,6 @@
 ---
 templateKey: webinar-post
-title: RIGPRO Wireline QC Introduction Course
+title: RIGPRO Wireline QC Introduction Course (1)
 subtitle: Introduction to RIGPRO Wireline QA software
 date: 2020-05-15T05:49:27.410Z
 description: Introductory webinar series about RIGPRO Wireline QC software platform.
