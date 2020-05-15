@@ -5,7 +5,7 @@ subtitle: 'Working on your RIGPRO Wireline QA project, part 2'
 date: 2020-05-15T06:15:11.143Z
 description: Introductory webinar series about RIGPRO Wireline QC software platform.
 featuredpost: false
-featuredimage: /img/Image-2.png
+featuredimage: /img/07_RIGPRO_SOFTWARE_PROJECT_CREATED.jpg
 tags:
   - Webinar 1
 ---
@@ -16,3 +16,5 @@ tags:
 * Depth View 2D module – working with Pressure charts – editing and manipulating the data. (25 min)
 
 **Q&A section** (15 min)
+
+![](/img/Image-2.png)
