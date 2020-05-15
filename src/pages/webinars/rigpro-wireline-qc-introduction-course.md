@@ -5,7 +5,7 @@ subtitle: Introduction to RIGPRO Wireline QA software
 date: 2020-05-15T05:49:27.410Z
 description: Introductory webinar series about RIGPRO Wireline QC software platform.
 featuredpost: false
-featuredimage: /img/platform.png
+featuredimage: /img/07_RIGPRO_SOFTWARE_PROJECT_CREATED.jpg
 tags:
   - Webinar 1
 ---
@@ -17,3 +17,5 @@ tags:
 * Introduction to Project data module – module for entering predetermined data and can be entered in pre-job interval. (15 min)
 
 **Q&A section** (15 min)
+
+![](/img/platform.png)
