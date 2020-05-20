@@ -40,5 +40,6 @@ webinarPositions:
   - position: Other - Casing
   - position: Other - Subsea
   - position: Partner
+  - position: Other
 ---
 
