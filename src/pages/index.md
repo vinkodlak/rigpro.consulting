@@ -68,8 +68,26 @@ pitches:
       url: /software/
     videoLink:
       newTab: false
-  - title: Lorem Ipsum
-    body: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum \rsociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, \r\npellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. \r\n\r\nDonec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis \rvitae, justo. Nullam dictum felis eu pede mollis pretium."
+  - title: Our Company
+    body: >-
+      RIGPRO Consulting was established by experienced ex wireline engineers
+      with the passion to successfully oversee and drive any logging operations
+      whether on land or sea . It all started with the development of a unique
+      software platform that allowed users to not only quality control logging
+      operations but also build a solid data base of each logging operation.
+      Development and field testing of RIGPRO software was achieved over a 3
+      year period. 
+
+
+      Clients are now able to follow the progress from planning, real time
+      logging, and will always have the complete database one click away for
+      future reference. 
+
+
+      RIGPRO software coupled with a team of experienced consultants is a game
+      changer with mitigating service company inefficiencies and providing
+      operations run safely, with one goal in mind, to provide high quality
+      data, on depth, with 100 percent operational efficiency.
     image:
       altText: ALt3
       image: /img/Image-4.png
