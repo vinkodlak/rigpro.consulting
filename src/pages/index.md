@@ -70,13 +70,13 @@ pitches:
       newTab: false
   - title: Our Company
     body: >-
-      RIGPRO Consulting was established by experienced ex wireline engineers
-      with the passion to successfully oversee and drive any logging operations
-      whether on land or sea . It all started with the development of a unique
-      software platform that allowed users to not only quality control logging
-      operations but also build a solid data base of each logging operation.
-      Development and field testing of RIGPRO software was achieved over a 3
-      year period. 
+      RIGPRO Consulting was established by experienced dedicated ex-wireline
+      engineers with the passion to successfully oversee and drive any logging
+      operations whether on land or sea . It all started with the development of
+      a unique software platform that allowed users to not only quality control
+      logging operations but also build a solid data base of each logging
+      operation. Development and field testing of RIGPRO software was achieved
+      over a 3 year period. 
 
 
       Clients are now able to follow the progress from planning, real time
@@ -84,10 +84,10 @@ pitches:
       future reference. 
 
 
-      RIGPRO software coupled with a team of experienced consultants is a game
-      changer with mitigating service company inefficiencies and providing
-      operations run safely, with one goal in mind, to provide high quality
-      data, on depth, with 100 percent operational efficiency.
+      RIGPRO software, coupled with a team of experienced consultants, is a game
+      changer with mitigating service company inefficiencies and providing safe
+      wireline operations, with one goal in mind; to provide high quality data,
+      on depth, with 100 percent operational efficiency.
     image:
       altText: ALt3
       image: /img/Image-4.png
