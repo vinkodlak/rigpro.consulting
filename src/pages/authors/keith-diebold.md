@@ -1,6 +1,6 @@
 ---
 templateKey: author
 name: 'Keith Diebold '
-image: /img/safari-pinned-tab.svg
+image: /img/placeimg_640_480_people.jpg
 ---
 
