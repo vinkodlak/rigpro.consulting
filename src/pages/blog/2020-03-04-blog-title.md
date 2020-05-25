@@ -6,7 +6,7 @@ author: Ivor Filipovic
 date: 2020-03-04T13:46:01.299Z
 description: This is a description of the blog entry. Test.
 featuredpost: false
-featuredimage: /img/og-image.jpg
+featuredimage: /img/03_PAPERWORK_SIGNED.jpg
 tags:
   - TestTag
 ---
