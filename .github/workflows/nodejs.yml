@@ -15,6 +15,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    - name: Kill running actions
+      uses: fauguste/auto-cancellation-running-action@0.1.4
+      with:
+        githubToken: ${{ secrets.GITHUB_TOKEN }}
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
