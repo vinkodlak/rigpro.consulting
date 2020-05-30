@@ -4,7 +4,7 @@ title: >-
   Ever used the PRS Hydraracker for offline rig up and rig down on dual derrick
   deep water drilling rigs? 
 subtitle: >-
-  This innovative technique can save clients precious rig time and make for an
+  This innovative technique saves clients precious rig time and make for an
   extremely efficient operation!
 author: 'Keith Diebold '
 date: 2020-05-25T19:16:12.647Z
