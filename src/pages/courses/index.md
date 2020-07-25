@@ -6,7 +6,7 @@ drillingPersonnel:
     text: Drilling Action
     url: Go here url
   body: Drilling Body
-  subtitle: Drilling Subtitle
+  subtitle: 'Drilling Support Wireline Operations '
   title: Drilling title
 ggPersonnel:
   action:
