@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: >-
-  Non conventional usage of two PRS Hydraracker system for wireline logging
+  Non conventional usage of two PRS Hydraracker systems for wireline logging
   operations on deep water dual derrick drilling rigs
 subtitle: >-
   This innovative technique saves clients precious rig time and make for an
