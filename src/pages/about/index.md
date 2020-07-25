@@ -104,17 +104,7 @@ section2:
         * Open and Cased Hole Operations
   title: Our Experience
 section3:
-  body: >-
-    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
-    ligula eget dolor. Aenean massa. Cum  sociis natoque penatibus et magnis dis
-    parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, 
-
-    pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. 
-
-
-    Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim
-    justo, rhoncus ut, imperdiet a, venenatis  vitae, justo. Nullam dictum felis
-    eu pede mollis pretium.
+  body: ' RIGPRO Consulting was established by experienced dedicated ex-wireline engineers with the passion to successfully oversee and drive any logging operations whether on land or sea . It all started with the development of a unique software platform that allowed users to not only quality control logging operations but also build a solid data base of each logging operation. Development and field testing of RIGPRO software was achieved over a 3 year period.'
   image:
     altText: Our company
     image: /img/desktop.png
