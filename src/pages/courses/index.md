@@ -29,11 +29,11 @@ wirelinePersonnel:
     url: Wireline URL
   body: >-
     RIGPRO consultants have vast experience in wireline operations. All staff
-    members have years of field experience in both cased and open hole
-    operations. The course will provide an introductory of formation evaluation,
-    an outline of logging tools and the measurements provided, rigging of
-    wireline equipment, and post job requirements.
-  subtitle: 'Introductory course outlining wireline operations '
+    members have years of field experience in both cased and open hole services.
+    The course will provide an introductory to formation evaluation, an outline
+    of logging tools and the measurements provided, rigging of wireline
+    equipment, and post job requirements. 
+  subtitle: 'Wireline  101 is an Introductory course outlining wireline operations '
   title: Wireline 101
 ---
 
