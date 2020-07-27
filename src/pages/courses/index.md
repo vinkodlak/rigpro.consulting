@@ -29,8 +29,8 @@ wirelinePersonnel:
   body: >-
     RIGPRO consultants have vast experience in wireline operations. All staff
     members have years of field experience in both cased and open hole
-    operations.
-  subtitle: 'General course outline for wireline operations '
+    operations. The course will outline the ba
+  subtitle: 'Introductory course outlining wireline operations '
   title: Wireline 101
 ---
 
