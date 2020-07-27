@@ -5,11 +5,12 @@ drillingPersonnel:
   action:
     text: Drilling Action
     url: Go here url
-  body: >-
-    The course will provide an overview of the requirements of mechanical
-    services including pipe recovery operations, mechanical plug and packer
-    settings, wireline fishing operations and rig up, perforating, pipe
-    conveyance of logging tools, and other auxiliary services. 
+  body: >+
+    The course will provide an overview of wireline mechanical services
+    including pipe recovery operations, mechanical plug and packer settings,
+    wireline fishing operations, perforating, pipe conveyance of logging tools,
+    and other auxiliary services required for drilling support operations. 
+
   subtitle: >-
     This course provides an insight on mechanical wireline services provided for
     drilling support requirements . 
