@@ -13,7 +13,7 @@ drillingPersonnel:
 
   subtitle: >-
     This course provides an insight on mechanical wireline services provided for
-    drilling support requirements . 
+    drilling support operations
   title: Drilling Support Wireline Operations
 ggPersonnel:
   action:
