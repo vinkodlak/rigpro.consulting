@@ -19,8 +19,8 @@ ggPersonnel:
     importance of required preparation of equipment before the load out, the
     experience required of the logging crews, and the execution at the wellsite.
   subtitle: >-
-    Course outline on methods to mitigate risks and operate at high efficiencies
-    on non standard deepwater and remote wireline operations 
+    This course focuses on means to mitigate risks and operate at high
+    efficiencies on non standard deepwater and remote wireline operations. 
   title: 'Deepwater and Remote Wireline Operations '
 wirelinePersonnel:
   action:
