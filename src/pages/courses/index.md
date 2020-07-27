@@ -25,7 +25,7 @@ ggPersonnel:
     the inefficiencies of service companies. This course will focus on the
     importance of required preparation and maintenance of equipment before the
     load out, the experience requirements of the logging and maintenance crews,
-    and the execution at the wellsite. 
+    and the execution of wireline services at the wellsite. 
   subtitle: >-
     This course focuses on means to mitigate risks and operate at high
     efficiencies on non standard deepwater and remote wireline operations. 
