@@ -1,8 +1,8 @@
 ---
 templateKey: blog-post
 title: >-
-  Non conventional usage of two PRS Hydraracker systems for wireline logging
-  operations on deep water dual derrick drilling rigs
+  Innovative Non Conventional Usage of Two Hydraracker Pipe Racking Systems for
+  Wireline Logging Operations on Deepwater Dual Derrick Vessels 
 subtitle: >-
   This innovative technique saves clients precious rig time and make for an
   extremely efficient logging operation!
@@ -12,9 +12,10 @@ description: >-
   On a recent drilling campaign on the Maersk Viking in West Africa, RIGPRO
   operational petrophysicists worked with the drill crew and service company on
   a new innovate technique to deploy logging tools on the drill floor. Two
-  Hydraracker PRS system was utilized for conveyance from the auxiliary well
+  Hydraracker PRS systems were utilized for conveyance from the auxiliary well
   center and aux mouse hole to the main well center after a full function check
-  saving over 10 days rig time over a 6 well project. A first in the industry!  
+  of logging tools saving over 10 days rig time over a 6 well project. A first
+  in the industry!  
 featuredpost: false
 featuredimage: /img/IMG_5238.JPG
 tags:
