@@ -5,8 +5,14 @@ drillingPersonnel:
   action:
     text: Drilling Action
     url: Go here url
-  body: Drilling Body
-  subtitle: 'Drilling Support Wireline Operations '
+  body: >-
+    The course will provide an overview of the requirements of mechanical
+    services including pipe recovery operations, mechanical plug and packer
+    settings, wireline fishing operations and rig up, perforating, pipe
+    conveyance of logging tools, and other auxiliary services. 
+  subtitle: >-
+    This course provides an insight on mechanical wireline services provided for
+    drilling support. 
   title: Drilling Support Wireline Operations
 ggPersonnel:
   action:
@@ -32,7 +38,7 @@ wirelinePersonnel:
     members have years of field experience in both cased and open hole services.
     The course will provide an introductory to formation evaluation, an outline
     of logging tools and the measurements provided, rigging of wireline
-    equipment, drilling support operations and post job requirements. 
+    equipment, and post job requirements. 
   subtitle: 'Wireline 101 is an Introductory course outlining wireline operations '
   title: Wireline 101
 ---
