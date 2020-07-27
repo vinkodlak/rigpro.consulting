@@ -15,7 +15,9 @@ ggPersonnel:
   body: >-
     Deepwater and Remote wireline operations require extensive planning and
     preparation to avoid expensive NPT due to lack of knowledge in planning and
-    inefficiencies of service companies.
+    the inefficiencies of service companies. This course will focus on the
+    importance of required preparation of equipment before the load out, the
+    experience required of the logging crews, and the execution at the wellsite.
   subtitle: >-
     Course outline on methods to mitigate risks and operate at high efficiencies
     on non standard deepwater and remote wireline operations 
