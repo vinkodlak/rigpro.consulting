@@ -12,7 +12,7 @@ drillingPersonnel:
     conveyance of logging tools, and other auxiliary services. 
   subtitle: >-
     This course provides an insight on mechanical wireline services provided for
-    drilling support. 
+    drilling support requirements . 
   title: Drilling Support Wireline Operations
 ggPersonnel:
   action:
