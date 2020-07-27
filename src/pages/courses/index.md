@@ -32,8 +32,8 @@ wirelinePersonnel:
     members have years of field experience in both cased and open hole services.
     The course will provide an introductory to formation evaluation, an outline
     of logging tools and the measurements provided, rigging of wireline
-    equipment, and post job requirements. 
-  subtitle: 'Wireline  101 is an Introductory course outlining wireline operations '
+    equipment, drilling support operations and post job requirements. 
+  subtitle: 'Wireline 101 is an Introductory course outlining wireline operations '
   title: Wireline 101
 ---
 
