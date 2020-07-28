@@ -4,7 +4,7 @@ title: >-
   Innovative Non Conventional Usage of Two Hydraracker Pipe Racking Systems for
   Wireline Logging Operations on Deepwater Dual Derrick Vessels 
 subtitle: >-
-  This innovative technique saves clients precious rig time and make for an
+  This innovative technique saved our client precious rig time and made for an
   extremely efficient logging operation!
 author: 'Keith Diebold '
 date: 2020-05-25T19:16:12.647Z
