@@ -21,16 +21,16 @@ featuredimage: /img/IMG_5238.JPG
 tags:
   - Offline Rigup
 ---
-Utilizing two Hydraracker's for non conventional open hole logging rigging has many benefits:
+Utilizing two Hydraracker's for non conventional open hole logging rigging was found to have many benefits including the following:
 
-* Offline rig up in the aux well and mouse hole off the critical path requiring no rig time
+* Offline rig up in the aux well and mouse hole off the critical path required no rig time
 * Allows for full function test of tools before deploying to the active well 
 * Allows the service companies to install auxiliary hardware on the tool string off the critical path and at no expense of online rig time.
 * Offline rig down of tool strings off the critical path resulting in even more rig time savings
 
-This innovative technique requires extensive planning and additional equipment including the following:
+This innovative technique requires extensive planning and additional equipment including some of the following:
 
 * Personnel
-* Surface Equipment
-* Rig up gear 
-*
+* Additional logging system 
+* Rig up gear to accommodate rigging of logging tools in the aux derrick
+* Knowledge and experienced logging professionals with expertise with dual derrick operations. 
